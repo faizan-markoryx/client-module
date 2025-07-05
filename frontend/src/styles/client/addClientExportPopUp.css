@@ -1,0 +1,85 @@
+/* // add client export modal CSS //  */
+
+.client-export-popup-modal.ant-modal .ant-modal-content {
+  @apply p-0 rounded-none h-[510px]  w-[25rem]  left-[1rem]
+}
+
+.client-export-popup-modal .ant-modal-body{
+@apply w-[25rem] h-[100%]  flex flex-col
+}
+
+.client-export-popup-modal.ant-modal .ant-modal-close {
+  @apply text-white bg-none;
+}
+
+.client-export-popup-modal.ant-modal .ant-modal-close-x {
+  @apply text-xl bg-none;
+}
+.client-export-popup-modal .export-btn button{
+@apply h-[2.4rem] mt-[0px] rounded-md
+}
+
+/* // add client export popup modal CSS //  */
+
+.client-export-popup-modal .client-contact-export-header {
+  @apply h-14 pt-3 pl-6 bg-primary text-white text-xl font-semibold;
+}
+
+.client-export-popup-modal .export-client-all-details {
+  @apply p-[20px] bg-white h-[450px];
+}
+
+.export-client-all-details .export-first-select-all {
+  @apply flex my-[10px] gap-2 font-medium ;
+}
+
+.export-client-all-details .export-scroll-section {
+  @apply h-[330px] overflow-y-scroll;
+}
+
+/* // export scroll part //   */
+
+/* width */
+.client-export-popup-modal ::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.client-export-popup-modal ::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+.client-export-popup-modal ::-webkit-scrollbar-thumb {
+  background: #edeaea;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.client-export-popup-modal ::-webkit-scrollbar-thumb:hover {
+  background: #c1c1c1;
+}
+
+.export-scroll-section .client-export-data-details {
+  @apply h-[2.4rem]
+}
+.export-client-all-details .export-scroll-section .client-export-data-details {
+  @apply p-[0.4rem] m-2 border-black shadow-3xl font-medium;
+}
+
+.export-scroll-section .client-export-data-details .ant-checkbox {
+  @apply p-0 ;
+}
+
+.export-scroll-section .client-export-data-details .ant-checkbox-inner {
+  @apply rounded-full;
+}
+
+.export-client-all-details .export-last-btn{
+    @apply h-[50px] flex justify-start items-center mt-[10px] 
+}
+
+.export-client-all-details .export-last-btn .client-export-click {
+    @apply h-[2.4rem] w-[75px] cursor-pointer text-center font-normal flex-nowrap border-[1px] border-transparent text-sm
+    border-[#d9d9d9] bg-primary text-white outline-none rounded-[5px]
+}

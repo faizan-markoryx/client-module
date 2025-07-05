@@ -1,0 +1,27 @@
+.todayTargetedManagersList-main-container{
+    @apply w-[100%] h-[48%] flex flex-col justify-around items-center p-[1%]
+}
+
+.todayTargetedManagersList-main-container .todayscall-and-connected-both-container{
+    @apply flex flex-col justify-center items-center
+}
+
+.todayscall-and-connected-both-container
+.totalCountInNumber{
+    @apply text-primary text-5xl font-bold
+}
+
+.todayscall-and-connected-both-container
+.totalCallsConnectedWord{
+    @apply text-primary xl:text-xl font-bold lg:text-xl font-bold md:text-base md:font-bold
+}
+
+.todayscall-and-connected-both-container
+.todayWord{
+    @apply text-primary xl:text-xl font-bold lg:text-xl font-bold md:text-base md:font-bold
+}
+
+.todayTargetedManagersList-main-container
+.topManagersList{
+    @apply bg-[#1b90ff] w-full lg:h-9 md:h-12 flex justify-center items-center text-white font-bold xl:text-base lg:text-xs md:text-sm md:text-center md:p-[2%]
+}

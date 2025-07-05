@@ -1,0 +1,12 @@
+.logout-modal.ant-modal
+  .ant-modal-content {
+  @apply !h-44;
+}
+
+.logout-modal .ant-modal-close {
+  @apply !hidden;
+}
+
+.logout-modal .ant-modal-body {
+  @apply !flex !flex-col !justify-center !items-center gap-8;
+}

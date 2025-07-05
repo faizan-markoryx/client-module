@@ -1,0 +1,140 @@
+/* // Modal CSS // */
+
+.contact-pop-modal.ant-modal .ant-modal-content {
+    @apply w-[96%] h-[88vh] rounded-md p-0
+}
+
+.contact-pop-modal.ant-modal .ant-modal-close {
+    @apply text-primary outline-none;
+}
+
+.contact-pop-modal.ant-modal .ant-modal-close-x {
+  @apply text-xl;
+}
+
+.add-contact-select-modal .ant-select-arrow-loading {
+  @apply text-red-600;
+}
+
+.add-contact-label-input .add-contact-select-modal .ant-select-selector {
+  @apply w-[290px] h-11 p-0 pl-[10px] bg-white border-[1px] border-[#d9d9d9] hover:border-[1px]  hover:!border-[black] focus:!border-none focus:!shadow-none hover:active:!border-none !flex !justify-center !items-center;
+}
+
+.add-contact-label-input .add-contact-input-field .ant-picker-input {
+  @apply !w-[270px] h-[2.2rem];
+}
+
+.add-contact-label-input .add-contact-input-field.ant-picker {
+  @apply bg-white border-[1px] border-[#d9d9d9] hover:border-[1px]  hover:!border-[black] focus:!border-none focus:!shadow-none shadow-sm;
+}
+
+/* // add contact CSS // */
+
+.contact-head-new-btn {
+  @apply h-9 w-24 border-2 bg-primary text-white rounded-lg flex justify-center items-center cursor-pointer;
+}
+
+.main-contact-popUp-body {
+  @apply h-screen;
+}
+
+.main-contact-popUp-body ::-webkit-scrollbar {
+  @apply w-[12px];
+}
+
+.main-contact-popUp-body ::-webkit-scrollbar-track {
+  @apply bg-[#ffffff];
+}
+
+.main-contact-popUp-body ::-webkit-scrollbar-thumb {
+  @apply bg-[#edeaea] rounded-[20px];
+}
+
+.main-contact-popUp-body .add-contact-btn {
+  @apply h-[10%]  flex items-center gap-52 pl-9;
+}
+
+.contact-pop-modal .addContact-heading {
+  @apply !h-14 w-72 flex justify-center font-normal  text-lg items-center text-white bg-primary rounded-tr-full;
+}
+
+.main-contact-popUp-body .all-input-sec {
+  @apply w-[96%] h-[80%] flex items-center flex-col mx-[2%];
+}
+
+.contact-pop-modal .contact-form-main {
+  @apply flex justify-between flex-wrap pt-[5px] pb-[20px] pl-[10px] pr-5 w-full h-[85%] text-[#043c79] overflow-y-scroll bg-secondary rounded-md  border-[1px]  border-secondary;
+}
+
+.contact-form-main .add-contact-label-input {
+  @apply  flex flex-col items-start mt-[14px] mr-[30px] ml-[30px];
+}
+
+.contact-form-main .add-contact-label-input .add-contact-label {
+  @apply font-semibold;
+}
+
+.add-contact-label-input .note-source-sec {
+  @apply text-primary font-semibold;
+}
+
+.add-contact-label-input .radio-btn {
+  @apply flex items-center gap-4 text-black mt-1;
+}
+
+.add-contact-label-input .radio-btn .Incoming-Outgoing {
+  @apply flex gap-1 border-[1px] border-[#d9d9d9] rounded-md pl-1 pr-1;
+}
+
+.contact-form-main .add-contact-label-input .contact-input-section {
+  @apply bg-white rounded-[6px] text-left w-[290px] border-[1px] border-[#d9d9d9] outline-none h-11 pl-[10px] pr-[10px] hover:border-[1px] hover:border-black focus:border-[1px] focus:border-black mt-1 text-black shadow-sm;
+}
+
+.contact-form-main .add-contact-label-input .contact-textarea-input-section {
+  @apply bg-white rounded-[8px] text-black w-[290px] border-[1px] border-[#d9d9d9] outline-none pl-[10px] pr-[10px] hover:border-[1px] hover:border-black focus:border-[1px] focus:border-black mt-1 resize-none shadow-sm;
+}
+
+.add-contact-right-btn {
+  @apply flex justify-center gap-[15px] w-[100%] p-[1%];
+}
+
+.add-contact-right-btn .add-contact-submit {
+  @apply h-[52px] w-[130px] bg-[#00B282]  border-none outline-none text-white rounded-[5px] font-semibold text-lg  hover:text-white cursor-pointer font-mulish;
+}
+
+.add-contact-right-btn .add-contact-clear {
+  @apply h-[52px] w-[110px] bg-[#A4A5A5] border-none  outline-none text-white rounded-[5px] font-semibold text-lg cursor-pointer font-mulish hover:text-white;
+}
+
+.date-ok-button .ant-btn-primary {
+  @apply !bg-[#1677FF] !text-white font-medium text-xs p-0 w-10;
+}
+
+.add-contact-select-modal
+  .ant-select-focused:not(.ant-select-disabled).ant-select:not(
+    .ant-select-customize-input
+  )
+  .ant-select-selector {
+  @apply hover:!border-black !border-[#d9d9d9];
+}
+
+.add-contact-label-input .add-contact-select-modal {
+  @apply hover:!border-black !border-[#d9d9d9] shadow-sm	mt-1;
+}
+.addcontact-popup{
+  @apply flex justify-center items-center !overflow-y-hidden
+}
+
+.addcontact-popup .ant-modal {
+  @apply !w-full !h-full !flex !justify-center !items-center max-w-none top-0 bottom-0;
+}
+
+
+.phone-input-flag{
+    @apply !w-[288px] !h-[45px] !rounded-md
+}
+
+
+.add-contact-select-modal .ant-select-selector input {
+  @apply !pt-3
+}

@@ -1,0 +1,68 @@
+.main-create-user-div .ant-modal .ant-modal-content {
+  @apply h-max rounded-md p-[0];
+}
+/* .main-create-user-div .ant-modal {
+  @apply h-[84%]
+} */
+.main-create-user-div .ant-modal-body {
+  @apply h-[100%];
+}
+.ant-modal-wrap {
+  @apply overflow-hidden;
+}
+.main-create-user-div .ant-modal .ant-modal-close {
+  @apply hidden;
+}
+.main-create-user-div .ant-select-selector {
+  @apply h-[2.1rem];
+}
+
+.main-create-user-div .modal-header-section {
+  @apply flex justify-between items-center w-[100%] h-[3rem] bg-primary rounded-t-md;
+}
+.main-create-user-div .add-user-txt {
+  @apply text-[20px]  text-white font-semibold;
+}
+.main-create-user-div .cancel-section {
+  @apply text-2xl  flex cursor-pointer pr-2 text-white;
+}
+
+
+.main-create-user-div .inp-section-parent {
+  @apply flex flex-row justify-between gap-6 h-[70%] 
+  /* @apply  flex flex-row items-center justify-center gap-6 pt-[1rem] flex-wrap */
+}
+
+
+
+.main-create-user-div .inp-section-parent .add-user-all-details-sec {
+  @apply flex justify-between w-full flex-wrap gap-2 p-6;
+}
+
+.main-create-user-div .lab-for-details {
+  @apply text-[16px] text-[#265F9D];
+}
+.main-create-user-div .star-section {
+  @apply text-[16px] mr-[2px] text-[red] font-semibold;
+}
+.main-create-user-div .inp-section {
+  @apply pl-2 w-[18rem] rounded-lg h-[2.4rem] border-2 border-[#cfcfcf];
+}
+.main-create-user-div .select-section {
+  @apply border-[1px] border-[#cfcfcf] outline-none rounded-lg;
+}
+
+.select-section .ant-select-selector {
+  @apply !h-[36px];
+}
+
+.select-section .ant-select-selection-item {
+  @apply !leading-[35px];
+}
+
+.main-create-user-div .submit-but-div {
+  @apply flex justify-center pb-5;
+}
+.main-create-user-div .submit-but {
+  @apply font-semibold bg-[#265F9D] w-[6rem] h-[2.5rem] rounded-md text-white;
+}

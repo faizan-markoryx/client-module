@@ -1,0 +1,67 @@
+/* .editModalMainDiv .ant-modal .ant-modal-content {
+    width: 45rem;
+    height: 26rem;
+    border-radius: 10px;
+    padding: 0;
+    top: 3rem;
+    overflow: none;
+    right: 5rem;
+} */
+
+.editModalMainDiv .ant-modal .ant-modal-content{
+    @apply 
+    w-[45rem]
+     p-0 overflow-visible rounded-md
+}
+
+.editModalMainDiv .ant-modal{
+    @apply !w-max
+}
+
+.editModalMainDiv .ant-modal .ant-modal-close{
+    display: none !important;
+}
+.editModalMainDiv .ant-select-selector{
+    height: 38px !important;
+}
+
+.editModalMainDiv .modal-header-section{
+    @apply  flex justify-between items-center w-[100%] h-[3rem] bg-primary rounded-t-md
+}
+.editModalMainDiv .add-user-txt{
+    @apply  text-[20px]  text-white font-semibold
+}
+
+.editModalMainDiv .cancel-section{
+    @apply text-2xl  flex cursor-pointer pr-2 text-white
+}
+
+
+.editModalMainDiv .inp-section-parent{
+    @apply  flex flex-row items-center justify-center gap-6 pt-[1rem] flex-wrap
+}
+
+
+.editModalMainDiv .lab-for-details{
+    @apply text-[16px] text-[#265F9D]
+   
+}
+.editModalMainDiv .star-section{
+    @apply text-[16px] mr-[2px] text-[red] font-semibold
+}
+.editModalMainDiv .inp-section{
+    @apply pl-2 w-[18rem] rounded-lg h-[2.5rem] border-2 border-[#cfcfcf] outline-none
+}
+.editModalMainDiv .selectt-section{
+    @apply border border-[#cfcfcf] outline-none rounded-lg
+}
+.editModalMainDiv .submit-but-div{
+    @apply  flex justify-center pt-6 pb-6
+}
+.editModalMainDiv .submit-but{
+    @apply  font-semibold bg-[#265F9D] w-[6rem] h-[2.5rem] rounded-md text-white
+}
+
+.editModalMainDiv .ant-select-selection-item{
+    @apply !pt-[3px]
+}

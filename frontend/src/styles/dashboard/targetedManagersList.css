@@ -1,0 +1,17 @@
+.totalManagersConnectedToday-main-container {
+    @apply w-full h-[48%] flex justify-center items-center
+}
+
+.totalManagersConnectedToday-main-container .totalManagersListHandler {
+    @apply lg:w-[90%] md:w-full h-[80%] overflow-y-scroll flex flex-col gap-5 p-[2%]
+}
+
+.totalManagersConnectedToday-main-container .totalManagersListHandler::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.totalManagersListHandler .topManagerListOfToday {
+    @apply flex justify-between font-mulish font-extrabold text-sm text-primary
+}

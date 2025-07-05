@@ -1,0 +1,35 @@
+.Notification-Section-main-box {
+    @apply h-[33rem] overflow-y-scroll
+}
+
+.Notification-Section-main-box::-webkit-scrollbar {
+    @apply w-[12px]
+}
+
+.Notification-Section-main-box::-webkit-scrollbar-track {
+    @apply bg-[#ffffff] rounded-[20px]
+}
+
+.Notification-Section-main-box::-webkit-scrollbar-thumb {
+    @apply bg-[#edeaea] rounded-[20px]
+}
+
+.notify-search-inp:where(.css-dev-only-do-not-override-w8mnev).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    @apply !bg-[#F1F5F9]
+}
+
+.notify-search-inp:where(.css-dev-only-do-not-override-w8mnev).ant-select-multiple .ant-select-selection-overflow {
+    @apply max-h-16 overflow-y-scroll
+}
+
+.notify-search-inp .ant-select-selection-overflow::-webkit-scrollbar {
+    @apply w-[10px]
+}
+
+.notify-search-inp .ant-select-selection-overflow::-webkit-scrollbar-track {
+    @apply bg-[#F2F2F2]
+}
+
+.notify-search-inp .ant-select-selection-overflow::-webkit-scrollbar-thumb {
+    @apply bg-[#8888] rounded-full
+}

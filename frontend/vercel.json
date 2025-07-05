@@ -1,0 +1,15 @@
+{
+    "env": {
+        "BRANCH": "live"
+    },
+    "scripts": {
+        "vercel-deploy": "if [ \"$BRANCH\" != \"live\" ]; then echo \"Cannot deploy from $BRANCH branch\"; exit 1; fi"
+    },
+    "routes": [
+        {
+            "src": "/[^.]+",
+            "dest": "/",
+            "status": 200
+        }
+    ]
+}

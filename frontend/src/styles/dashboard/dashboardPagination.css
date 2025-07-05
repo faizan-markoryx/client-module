@@ -1,0 +1,21 @@
+.dashboardPagination-main-container{
+    @apply flex justify-between items-center h-[8%] my-[1vh] px-2 rounded-br-2xl rounded-bl-2xl bg-[#e5e7eb]
+}
+.dashboardPagination-main-container .ant-select{
+    @apply !w-fit
+}
+.dashboardPagination-main-container .ant-pagination-item-link{
+    @apply !flex !justify-center !items-center
+}
+
+.dashboardPagination-main-container .ant-select-selection-item{
+    @apply !p-0 flex justify-center items-center
+}
+
+.dashboardPagination-main-container .ant-select-selector{
+    @apply !w-14
+}
+.dashboardPagination-main-container .perpage-option.ant-select-dropdown{
+    @apply !w-fit 
+    /* !left-[55.5%] */
+}

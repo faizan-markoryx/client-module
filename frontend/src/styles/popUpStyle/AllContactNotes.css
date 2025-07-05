@@ -1,0 +1,40 @@
+.AllContactNotes .ant-modal-close{
+    @apply !hidden
+}
+
+.AllContactNotes.ant-modal .ant-modal-content{
+    @apply !pl-0 !pr-0 !pt-0
+}
+.all-notes-heading{
+    @apply flex items-center justify-between bg-primary h-14 border-b sticky top-0 rounded-t-lg
+}
+.add-more-but-sec{
+    @apply flex justify-end items-center pr-5 pt-1 w-full text-base font-semibold 
+}
+
+.add-more-but{
+    @apply bg-white text-black h-10 p-[2px] flex gap-2 items-center
+}
+
+.table-tr-sec{
+    @apply  text-base border-b-2 pb-4 gap-[0.9rem]
+}
+.table-th-sec{
+    @apply  px-2 py-5 text-sm text-primary text-left items-center
+}
+
+.main-section-of-all-note-table{
+    @apply pl-3 overflow-y-scroll overflow-x-hidden scroll-smooth h-[430px]
+}
+
+.main-section-of-all-note-table::-webkit-scrollbar {
+    @apply w-[12px]
+}
+
+.main-section-of-all-note-table::-webkit-scrollbar-track {
+    @apply bg-[#ffffff]
+}
+
+.main-section-of-all-note-table::-webkit-scrollbar-thumb {
+    @apply bg-[#edeaea] rounded-[20px]
+}

@@ -1,0 +1,19 @@
+.delete-note-popup-modal .ant-modal .ant-modal-content {
+  @apply h-44 p-0 rounded-sm;
+}
+
+.delete-note-popup-modal .ant-modal-close {
+    @apply hidden
+}
+
+.client-all-delete-details {
+    @apply p-[20px] flex justify-center flex-col
+}
+
+.client-all-delete-details .client-delete-first-division {
+  @apply flex items-center gap-2;
+}
+
+.client-all-delete-details .client-delete-first-division .delete-error-icon {
+  @apply text-3xl text-red-500 ;
+}

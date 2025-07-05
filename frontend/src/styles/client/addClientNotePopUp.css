@@ -1,0 +1,64 @@
+/* // add note modal CSS //  */
+
+.add-note-pop-modal.ant-modal .ant-modal-content {
+  @apply p-0 rounded-[2px] h-[500px];
+}
+
+.add-note-pop-modal.ant-modal .ant-modal-close {
+  @apply text-white;
+}
+
+.add-note-pop-modal.ant-modal .ant-modal-close-x {
+  @apply text-xl bg-none;
+}
+
+/* // add client note CSS //  */
+
+.note-data-table-flexible {
+  @apply flex items-center gap-2 mt-3;
+}
+
+.add-note-pop-modal .add-note-main-section .add-note-header-sec {
+  @apply h-14 pt-3 pl-6 bg-primary text-white text-xl font-semibold;
+}
+
+.add-note-pop-modal .note-first-section {
+  @apply pt-6 flex flex-col items-center;
+}
+
+.add-note-pop-modal .note-first-section .note-label-or-text {
+  @apply flex flex-col justify-start m-auto;
+}
+
+.note-first-section .note-label-sec {
+  @apply text-sm text-primary font-semibold;
+}
+
+.note-first-section .note-textarea-sec {
+  @apply h-[180px] w-[300px] resize-none rounded-lg border-[1px] outline-none hover:border-black bg-[#f2f2f2] mt-[10px]
+    pt-[5px] pl-[10px];
+}
+
+.note-first-section .note-textarea-sec::-webkit-scrollbar {
+  @apply w-[12px];
+}
+
+.note-first-section .note-textarea-sec::-webkit-scrollbar-track {
+  @apply bg-[#ffffff];
+}
+
+.note-first-section .note-textarea-sec::-webkit-scrollbar-thumb {
+  @apply bg-[#edeaea] rounded-[20px];
+}
+
+.add-note-main-section .note-save-clear-btn {
+  @apply pt-[40px] flex gap-[30px] justify-center;
+}
+
+.add-note-main-section .note-save-clear-btn .note-save-click {
+  @apply h-[35px] w-[90px] text-sm rounded-[30px] border-none text-white bg-[#0e4d92] outline-none;
+}
+
+.add-note-main-section .note-save-clear-btn .note-clear-click {
+  @apply h-[35px] w-[90px] text-sm rounded-[30px] border-none text-white bg-[#0e4d92] outline-none;
+}

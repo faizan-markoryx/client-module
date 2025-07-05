@@ -1,0 +1,7 @@
+.drag-and-drop-client-modal .ant-modal-content{
+    @apply p-0 h-[35rem] w-[25rem] right-80  left-[5.5rem];
+
+}
+.drag-and-drop-client-modal  .ant-modal-close{
+    display: none !important;
+}

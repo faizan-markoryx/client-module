@@ -1,0 +1,53 @@
+
+.contact-firstname-data-modal .ant-modal{
+    @apply h-[80%] 
+}
+.contact-firstname-data-modal .ant-modal-body{
+    @apply h-[100%] flex items-center flex-col
+}
+
+.contact-firstname-data-modal .ant-modal-content{
+    @apply h-[100%] p-[0]
+     
+}
+
+.contact-firstname-data-modal .ant-modal-close{
+    @apply hidden
+}
+.contact-firstname-data-modal .contsact-name-header-main-div{
+    @apply font-bold w-[100%] font-mulish h-[4rem] flex items-center justify-center rounded-md pb-[16px]
+}
+.contact-firstname-data-modal .contsact-name-header{
+    @apply  text-[20px]  w-[21rem] mt-[8px] h-[3.5rem] items-center rounded-b-[100px] bg-primary text-white font-semibold flex justify-center
+}
+.contact-firstname-data-modal .contact-name-map{
+    @apply overflow-scroll w-[81%] relative h-[80%] font-mulish overflow-x-hidden mt-4 font-[800] border border-[#707070] rounded-lg
+}
+.contact-firstname-data-modal .contact-name-map-main-div{
+    @apply flex w-full items-center justify-around border-b border-[#707070]
+}
+.contact-firstname-data-modal .contact-name-header{
+    @apply   flex text-start text-gray-400 items-center w-[30%] pl-[5%] h-[3rem] text-[14px] 
+}
+.contact-firstname-data-modal .contact-name-dot{
+    @apply w-[10%] flex items-center h-[3rem]
+}
+.contact-firstname-data-modal .contact-name-accessor{
+    @apply  flex w-[35%] text-start items-center h-max text-[13px] break-all 
+}
+.contact-firstname-data-modal .contect-name-blank-condition{
+    @apply flex w-[35%] text-start items-center h-[3rem] text-[15px]
+}
+
+/* Using For Scroll  */
+.contact-name-map::-webkit-scrollbar {
+    @apply w-[12px] hidden
+}
+
+.contact-name-map::-webkit-scrollbar-track {
+    @apply bg-[#ffffff] 
+}
+
+.contact-name-map::-webkit-scrollbar-thumb {
+    @apply bg-[#edeaea] rounded-[20px]
+}

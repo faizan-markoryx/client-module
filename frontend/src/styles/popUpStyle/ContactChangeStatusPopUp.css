@@ -1,0 +1,42 @@
+.contact-change-status-popUp .ant-modal-content {
+    @apply h-[230px] rounded-none p-0
+}
+
+.standard-comment-ownership .ant-select-selector {
+    @apply !w-[223px] rounded-none p-0 pl-[10px] bg-[#f2f2f2] border-[1px] border-[#d9d9d9] hover:border-[1px]  hover:!border-[black] focus:!border-none focus:!shadow-none hover:active:!border-none
+}
+
+.contact-change-status-popUp.ant-modal .ant-modal-close {
+    @apply text-white
+}
+
+.ContactChangeStatusIcon {
+    @apply text-xl cursor-pointer text-[#A4A5A5] hover:text-primary
+}
+
+.change-status-header {
+    @apply h-14  bg-primary flex items-center pl-6 text-xl font-normal font-mulish text-white
+}
+
+.to-input-main-sec {
+    @apply flex justify-around pt-5
+}
+
+.to-input-main-sec .standard-comment {
+  @apply flex flex-col
+}
+
+.to-input-main-sec .Ownership {
+ @apply flex flex-col 
+}
+
+.submit-cancel-btn {
+    @apply flex justify-center gap-8 pt-5
+}
+
+.submit-cancel-btn .sub-can-Submit {
+    @apply rounded-md bg-[#00B282]  text-white h-8 w-20 text-sm hover:!text-white border-none
+}
+.submit-cancel-btn .sub-can-Cancel {
+    @apply rounded-md bg-[#A4A5A5]  text-white h-8 w-20 text-sm hover:!text-white border-none
+}

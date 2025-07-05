@@ -1,0 +1,44 @@
+/* .userSwitchBut .ant-switch-inner {
+    background-color: black;
+} */
+
+.user-table-main-section::-webkit-scrollbar {
+  @apply w-[12px]
+}
+
+.user-table-main-section::-webkit-scrollbar-track {
+  @apply bg-[#ffffff];
+}
+
+.user-table-main-section::-webkit-scrollbar-thumb {
+  @apply bg-[#edeaea] rounded-[20px];
+}
+
+.userBody .ant-switch {
+  @apply !bg-[darkgray]
+}
+
+.userBody .userSwitchBut .ant-switch-inner {
+  @apply bg-[green]
+}
+
+.user-th {
+  @apply relative !h-[40px]
+}
+
+.user-th::before {
+  background-color: rgba(0, 0, 0, 0.06);
+  content: "";
+  height: 1.6em;
+  position: absolute;
+  top: 10px;
+  width: 1px;
+  left: 0;
+}
+
+.usetSpinDiv .ant-spin-dot-item {
+  @apply !bg-[black]
+}
+
+
+

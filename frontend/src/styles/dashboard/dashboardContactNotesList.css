@@ -1,0 +1,85 @@
+
+.allNotehandler-ul {
+    @apply h-[69%] overflow-y-scroll relative my-[1%]
+}
+
+.allNotehandler-ul .allContactNoteLoadre {
+    @apply absolute top-2/4 left-2/4 transform -translate-x-2/4 -translate-y-2/4
+}
+
+.allNotehandler-ul .li-For-createdBy-and-followUp-both {
+    @apply bg-secondary w-full xl:h-fit lg:h-fit md:h-fit my-2 p-[2%] flex flex-col xl:justify-between lg:justify-around shadow-2xl gap-3
+}
+
+
+.li-For-createdBy-and-followUp-both .createdBy-and-followUpNote-section {
+    @apply flex justify-between lg:items-center md:items-start xl:flex-row lg:flex-row md:flex-col lg:gap-0 md:gap-4 
+}
+
+.createdBy-and-followUpNote-section .createdByNameAndNote-container {
+    @apply flex justify-center items-center gap-2 font-mulish
+}
+
+.createdByNameAndNote-container .createdByWord {
+    @apply text-primary font-bold xl:text-sm lg:text-xs
+}
+
+.createdByNameAndNote-container .createdByNameWord {
+    @apply font-bold xl:text-sm lg:text-xs
+}
+
+.createdByNameAndNote-tooltip .ant-tooltip-content .ant-tooltip-inner {
+    @apply font-medium
+}
+
+.createdByNameAndNote-container .greenDotSymbol {
+    @apply text-green-500 xl:text-xl lg:text-lg cursor-default
+}
+
+.createdByNameAndNote-container .redDotSymbol {
+    @apply text-red-500 xl:text-xl lg:text-lg cursor-default
+}
+
+.createdBy-and-followUpNote-section .dashBoardAllNotHandler {
+    @apply flex gap-1
+}
+
+.dashBoardAllNotHandler .lableForInterviewScheduled {
+    @apply xl:text-xs lg:text-[9px] md:text-xs xl:font-normal lg:font-medium cursor-default bg-[#73C883] p-1 rounded-lg text-white
+}
+
+.dashBoardAllNotHandler .lableForEmailFollow-Up {
+    @apply xl:text-xs lg:text-[9px] md:text-xs xl:font-normal lg:font-medium cursor-default bg-[#B399D4] p-1 rounded-lg text-white
+}
+
+.dashBoardAllNotHandler .lableForFollow-Up {
+    @apply xl:text-xs lg:text-[9px] md:text-xs xl:font-normal lg:font-medium cursor-default bg-[#FF7B7B] p-1 rounded-lg text-white
+}
+
+.dashBoardAllNotHandler .lableForInterviewDone {
+    @apply xl:text-xs lg:text-[9px] md:text-xs xl:font-normal lg:font-medium cursor-default bg-[#88A38B] p-1 rounded-lg text-white
+}
+
+.dashBoardAllNotHandler .lableForSubmission {
+    @apply xl:text-xs lg:text-[9px] md:text-xs xl:font-normal lg:font-medium cursor-default bg-[#F79862] p-1 rounded-lg text-white
+}
+
+.dashBoardAllNotHandler .lableForIntroduction {
+    @apply xl:text-xs lg:text-[9px] md:text-xs xl:font-normal lg:font-medium cursor-default bg-[#49AFEA] p-1 rounded-lg text-white
+}
+
+.li-For-createdBy-and-followUp-both .main-note-section {
+    @apply flex items-center text-gray-500 xl:text-base lg:text-sm
+}
+
+.dashboardNotePopover-main .ant-popover-inner{
+    @apply !p-0 xl:w-[40vh] lg:w-[35vh] md:w-[32vh]
+}
+
+.dashboardNotePopover-main .createdForTitle{
+    @apply flex items-center gap-2 bg-[#E3F0FF] h-fit p-[5%] xl:font-semibold lg:font-medium xl:text-base lg:text-sm
+}
+
+.dashboardNotePopover-main .ant-popover-inner-content{
+    @apply h-fit p-[3%] flex flex-col gap-4
+}

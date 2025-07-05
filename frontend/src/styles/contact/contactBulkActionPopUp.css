@@ -1,0 +1,117 @@
+.bulk-transfer-icon {
+  @apply w-[33px] h-[33px] cursor-pointer text-xl text-red-600;
+}
+
+.contact-bulk-action-open-popup .ant-modal-content {
+  @apply h-[520px] rounded-none p-0;
+}
+
+.contact-bulk-action-open-popup.ant-modal .ant-modal-close {
+  @apply text-white;
+}
+
+.contact-bulk-head-division {
+  @apply h-14 pt-[16px] pl-[24px] bg-primary;
+}
+
+.contact-bulk-head-division .bulk-header-action {
+  @apply text-white text-xl font-semibold;
+}
+
+.bulk-second-division {
+  @apply p-[15px] h-full w-full;
+}
+
+.bulk-second-division .bulk-transfer-section {
+  @apply h-[200px] w-full;
+}
+
+.bulk-second-division .bulk-transfer-section .bulk-long-sec {
+  @apply border border-gray-400 w-full h-[35px] rounded-[10px] border-none bg-[#808080] text-xl text-white flex justify-center items-center font-semibold;
+}
+
+.bulk-transfer-section .download-excel-file-section {
+  @apply my-5 flex justify-between items-center mt-5 mb-5;
+}
+
+.bulk-transfer-section .download-excel-file-section .excel-template-file {
+  @apply flex gap-1 items-center mt-5 ml-9 cursor-pointer;
+}
+
+.download-excel-file-section .excel-template-file .download-word-tem {
+  @apply text-[14px] text-primary font-semibold;
+}
+
+.download-excel-file-section .excel-template-file .download-icon {
+  @apply text-xl text-primary;
+}
+
+.bulk-transfer-section .owner-ship-division {
+  @apply flex flex-col gap-2 mt-[-15px];
+}
+
+.bulk-transfer-section .owner-ship-division .owner-star-section {
+  @apply text-[18px] text-red-600 relative top-1;
+}
+
+.bulk-select-section.ant-select-single {
+  @apply rounded-none w-[240px];
+}
+
+.bulk-transfer-section .bulk-submit-sec {
+  @apply flex justify-center items-center;
+}
+
+.bulk-submit-sec .submit-btn-click {
+  @apply border border-[#808080] w-[80px] h-[35px] mt-5 rounded-md bg-primary text-white;
+}
+
+.bulk-transfer-section .bulk-transfer-last-division {
+  @apply h-[200px] w-full mt-5;
+}
+
+.bulk-transfer-section .bulk-transfer-last-division .bulk-delete-section {
+  @apply border-gray-400 w-full h-[35px] rounded-[10px] border-none bg-[#808080] text-xl text-white flex justify-center items-center font-semibold;
+}
+
+.bulk-transfer-last-division .bulk-delete-owner-email {
+  @apply mt-2 flex gap-3 flex-col;
+}
+
+.bulk-delete-owner-email .label-or-download-section {
+  @apply flex justify-between items-center mt-3 w-full;
+}
+
+.bulk-delete-owner-email .label-or-download-section .owner-email-label {
+  @apply font-medium flex gap-1 justify-center items-center;
+}
+
+.bulk-transfer-last-division .bulk-delete-owner-email .label-small-star {
+  @apply text-[18px] text-red-600 relative top-1;
+}
+
+.label-or-download-section .owner-email-download-template {
+  @apply flex gap-1 items-center;
+}
+
+.label-or-download-section
+  .owner-email-download-template
+  .download-excel-owner-email {
+  @apply text-[14px] text-primary font-semibold;
+}
+
+.delete-btn-section {
+  @apply flex justify-center items-center;
+}
+
+.delete-btn-section .bulk-delete-btn-click {
+  @apply border-gray-600 border-none w-[80px] h-[35px] mt-5 rounded-md bg-red-500 text-white;
+}
+
+.bulk-transfer-icon g path {
+  fill: gray;
+}
+
+.bulk-transfer-icon:hover g path {
+  fill: rgb(38 95 157 / var(--tw-bg-opacity));
+}

@@ -1,0 +1,7 @@
+.dashboard-main-container{
+    @apply w-full h-[84vh] flex justify-center mt-8
+}
+
+.dashboard-both-left-right-section-handler{
+@apply w-[95%] h-full bg-secondary rounded-xl flex justify-around items-center p-5
+}

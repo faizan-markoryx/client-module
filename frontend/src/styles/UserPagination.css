@@ -1,0 +1,162 @@
+.userTablePaginationMainDiv{
+ @apply flex justify-center items-center bg-[#E6E6E6] h-16 pl-10 pr-10 rounded-bl-2xl rounded-br-2xl
+}
+
+.userTablePaginationMainDiv{
+    @apply flex justify-between items-center
+}
+
+.userPaginationPages{
+    @apply flex justify-end w-[40%]
+}
+
+.paginationLastDiv{
+    @apply flex justify-center items-center
+}
+
+.candidatesPerPageDiv{
+    @apply flex justify-center items-center gap-4
+}
+
+.candidatesPerPageDiv .ant-select-arrow{
+    @apply hidden
+}
+
+.showingPageination{
+    @apply text-[15px] font-semibold
+}
+.candidatesPerPageDiv{
+    @apply text-[14px] font-semibold
+}
+.userTablePaginationMainDiv .ant-select-selection-item{
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 1px;
+}
+
+.userTablePaginationMainDiv .ant-select-selector{
+    /* padding: 0 !important; */
+    width: 50px !important;
+    background-color: darkgray !important;
+    color: white !important;
+}
+
+.userTablePaginationMainDiv .nex-prev-disable{
+    cursor: not-allowed !important;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-right: 1px solid darkgray !important;
+    color: darkgray !important;
+    
+}
+
+.userTablePaginationMainDiv .ant-pagination-item{
+    height: auto !important;
+    margin: 0px !important;
+    background-color: white !important;
+    border-radius: 0px !important;
+    width: 32px !important;
+    height: 32px !important;
+    border-right: 1px solid darkgray !important;
+    
+}
+
+
+
+
+.userTablePaginationMainDiv .ant-pagination-prev{
+    padding: 0px !important;
+    margin: 0px !important;
+    background-color: white !important;
+    border-right: 1px solid darkgray !important;
+
+}
+
+.userTablePaginationMainDiv .ant-pagination-item-active{
+    border: none;
+    background-color: black !important;
+    color: white !important;
+    border-color: transparent;
+    border-radius: 5px;
+    border-radius: 0px !important;
+    /* border-right: 1px solid darkgray !important; */
+}
+
+.userTablePaginationMainDiv .ant-pagination-item{
+    /* border-right-color: darkgray !important; */
+}
+
+.userTablePaginationMainDiv .ant-pagination-item-active a{
+    color: white !important;
+}
+
+.userTablePaginationMainDiv .ant-pagination-prev{
+
+    border-radius: 0px !important;
+    background-color: white !important;
+    border-right: 1px solid darkgray !important;
+}
+
+.userTablePaginationMainDiv .ant-pagination-prev:hover{
+    background-color: white !important;
+}
+
+
+.userTablePaginationMainDiv .ant-pagination-next{
+
+    border-radius: 0px !important;
+    background-color: white !important;
+    border-right: 1px solid darkgray !important;
+}
+
+.userTablePaginationMainDiv .ant-pagination-next :hover{
+    background-color: white !important;
+}
+
+.userTablePaginationMainDiv .nex-prev{
+
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px !important;
+    background-color: white !important;
+    border-right: 1px solid darkgray !important;
+    cursor: pointer;
+}
+
+.userTablePaginationMainDiv .nex-next-disable{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /* border-right: 1px solid darkgray !important; */
+    cursor: not-allowed;
+    color: darkgray !important;
+}
+
+.userTablePaginationMainDiv .nex-next{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px !important;
+    background-color: white !important;
+    cursor: pointer;
+    /* border-right: 1px solid darkgray !important; */
+}
+
+.paginationLastDiv .ant-pagination-options{
+    display: none !important;
+}

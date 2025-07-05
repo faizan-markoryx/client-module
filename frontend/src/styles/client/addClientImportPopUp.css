@@ -1,0 +1,68 @@
+/* // add client import modal CSS //  */
+
+.client-import-popup-modal.ant-modal .ant-modal-content {
+  @apply p-0 rounded-none h-[500px];
+}
+
+.client-import-popup-modal.ant-modal .ant-modal-close {
+  @apply text-white bg-none;
+}
+
+.client-import-popup-modal.ant-modal .ant-modal-close-x {
+  @apply text-xl;
+}
+
+/* // add client import popup modal CSS //  */
+
+.client-import-popup-modal .import-client-header {
+  @apply h-14 pt-3 pl-6 bg-primary text-white flex justify-center text-xl font-semibold;
+}
+
+.client-import-popup-modal .client-import-all-detail-pop {
+  @apply h-[460px] w-full pt-[20px] pl-[20px] pr-[20px] pb-[10px];
+}
+
+.client-import-all-detail-pop .client-import-middle-details {
+  @apply flex justify-center items-center gap-[8px] cursor-pointer text-primary font-medium;
+}
+
+.client-import-all-detail-pop .client-import-drag-drop-section {
+  @apply flex justify-center mt-[10px];
+}
+
+.client-import-all-detail-pop .client-import-drag-drop-section .drag-drop-sec {
+  @apply h-[200px] w-[350px] rounded-[15px] flex flex-col justify-center items-center text-center gap-[6px]
+    border-dashed border-2 border-primary mt-[15px];
+}
+
+.client-import-drag-drop-section .drag-drop-sec .client-drag-file-import {
+  @apply text-black text-xl font-semibold;
+}
+
+.client-import-drag-drop-section .drag-drop-sec .client-or-extra {
+  @apply text-black text-2xl font-normal;
+}
+
+.client-import-drag-drop-section .drag-drop-sec .client-browse-import {
+  @apply text-primary text-[22px] font-medium;
+}
+
+.client-import-drag-drop-section .drag-drop-sec .client-file-allowed {
+  @apply text-gray-700 text-base font-normal;
+}
+
+.client-import-drag-drop-section .drag-drop-sec .client-file-name {
+  @apply text-gray-700 text-base font-bold;
+}
+
+.client-import-all-detail-pop .client-input-file-sec input {
+  @apply h-[200px] w-[350px] absolute top-[93px] left-[84px] opacity-0 rounded-[17px] bg-white cursor-pointer;
+}
+
+.client-import-all-detail-pop .client-import-btn {
+  @apply flex justify-center items-center mt-[10px];
+}
+
+.client-import-all-detail-pop .client-import-btn .client-submit-click {
+  @apply h-12 w-[110px] mt-6 bg-primary text-white rounded-[5px] p-0 outline-none border-[1px] border-transparent cursor-pointer text-sm font-semibold;
+}

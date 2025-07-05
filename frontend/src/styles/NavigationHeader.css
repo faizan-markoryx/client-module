@@ -1,0 +1,79 @@
+.navigation-header-main-div {
+  @apply w-[100%] h-[4.3rem] bg-[#265F9D] flex justify-between items-center pr-[1rem];
+}
+.navigation-header-main-div .img-section {
+  @apply flex items-center gap-3 pl-[8%];
+}
+.navigation-header-main-div .skulls-img {
+  @apply w-[2.1rem] cursor-pointer;
+}
+.navigation-header-main-div .text-logo {
+  @apply w-[120] cursor-pointer;
+}
+.navigation-header-main-div .header-list-section {
+  @apply hover:rounded-lg hover:text-[#265F9D] font-semibold hover:transition hover:duration-500 hover:ease-in-out border-[#265F9D] rounded-none hover:bg-white gap-2 text-white  justify-center cursor-pointer flex items-center  w-[7.5rem] h-[3rem];
+}
+
+.navigation-header-main-div .selected {
+  @apply rounded-lg !text-[#265F9D] font-semibold transition duration-1000 ease-in-out border-[#265F9D] bg-white gap-2 text-white  justify-center cursor-pointer flex items-center  w-[7.5rem] h-[3rem];
+}
+.navigation-header-main-div .log-out-header-but {
+  @apply cursor-pointer  justify-center flex items-center gap-1;
+}
+.navigation-header-main-div .log-out-icon {
+  @apply text-[18px] flex items-center text-center gap-2;
+}
+
+.navigation-header-main-div .log-bell-div {
+  @apply flex items-center gap-3;
+}
+.navigation-header-main-div .menu-popup {
+  @apply w-[20rem] h-[18rem] bg-[white] pt-[1rem] shadow-[0px_2px_15px_#00000029]  rounded-md mt-1 z-50 absolute top-[9%] left-[75.5%]  flex flex-col gap-2;
+}
+
+.navigation-header-main-div .menu-popup1 {
+  @apply w-[20rem] h-[144px] bg-[white] pt-[1rem] shadow-[0px_2px_15px_#00000029]  rounded-md mt-1 z-50 absolute top-[9%] left-[75.5%]  flex flex-col gap-2;
+}
+.navigation-header-main-div .img-and-user-name-in-menu {
+  @apply flex items-center pl-[2rem] gap-8;
+}
+.navigation-header-main-div .profile-sec {
+  @apply w-[4rem]  h-[4rem] rounded-full bg-[#265F9D] flex justify-center;
+}
+.navigation-header-main-div .user-section {
+  @apply flex  cursor-pointer pl-1  items-center text-black gap-3 justify-start w-[5rem] h-[2.5rem]  rounded-t-md;
+}
+.navigation-header-main-div .report-sec {
+  @apply flex  cursor-pointer   items-center text-black gap-3 justify-start  w-[5.5rem] h-[2.5rem]  rounded-t-md;
+}
+.navigation-header-main-div .log-out-div {
+  @apply flex  rounded-b-md  items-center mt-[22px] text-black gap-3 justify-center w-[10] h-[3rem]  bg-[#ebe9e9];
+}
+.navigation-header-main-div .log-out-but {
+  @apply font-semibold flex items-center justify-center;
+}
+.navigation-header-main-div .avtar-and-menu-sec {
+  @apply w-[6rem] h-[3rem] cursor-pointer hover:rounded-lg flex text-white hover:text-primary items-center justify-center gap-2 hover:bg-[white];
+}
+
+
+.navigation-header-main-div .confirm-delete-box{
+@apply w-[22rem] rounded-md h-[9rem] bg-white shadow-lg absolute top-[13rem] right-[34rem]  p-[1rem] flex flex-col gap-5  items-center
+}
+
+
+.navigation-header-main-div .alert-icon{
+    @apply text-[22px] text-[red]
+}
+.navigation-header-main-div  .text-base{
+    @apply flex items-center gap-2
+}
+.navigation-header-main-div .btns-for-log{
+    @apply flex items-center justify-center  gap-4
+}
+.navigation-header-main-div .click-confirm-btn{
+    @apply h-[2rem] w-[3rem] bg-[white] rounded-md text-[14px] border-[1px] border-[#a8a8a8]
+}
+.navigation-header-main-div .confirm{
+    @apply h-[2rem] w-[3rem] bg-primary rounded-md text-[14px] text-white
+}

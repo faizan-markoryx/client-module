@@ -1,0 +1,15 @@
+.dashboardSaearchByUsers-main-container{
+    @apply flex justify-between p-4 bg-[#E3F0FF] h-[12%] items-center lg:gap-0 md:gap-1
+}
+
+.dashboard-searchByUser-input .ant-select-selector{
+    @apply h-10 overflow-y-scroll
+}
+
+.dashboardSaearchByUsers-main-container ::-webkit-scrollbar {
+    @apply hidden
+}
+
+.dashboardSaearchByUsers-main-container .ant-picker{
+    @apply !h-10
+}

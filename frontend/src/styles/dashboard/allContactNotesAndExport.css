@@ -1,0 +1,19 @@
+.allContactNotesAndExport-main-conatiner{
+    @apply flex border-b-[1px] border-black p-2 h-[8%]
+}
+
+.allContactNotesAndExport-main-conatiner .blank-section{
+    @apply w-1/3
+}
+
+.allContactNotesAndExport-main-conatiner .allContactNotes-section{
+    @apply w-1/3 flex justify-center items-center text-primary text-center text-base font-bold
+}
+
+.allContactNotesAndExport-main-conatiner .export-section{
+    @apply w-1/3 flex justify-end items-center
+}
+
+.allContactNotesAndExport-main-conatiner .export-section .exportBtn{
+    @apply bg-primary cursor-pointer shadow-2xl h-8 font-normal text-white border-[1px] border-transparent text-sm w-16 rounded-md p-0
+}

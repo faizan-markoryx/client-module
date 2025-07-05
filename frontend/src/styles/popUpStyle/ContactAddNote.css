@@ -1,0 +1,36 @@
+.contact-add-note-popup.ant-modal .ant-modal-content {
+    @apply !h-[517px] !pt-0 !pl-0 !pr-0 rounded-xl
+}
+
+.contact-add-note-popup .ant-modal-close {
+    @apply !hidden
+}
+
+.contact-add-note-popup .ant-picker-footer {
+    @apply !hidden
+}
+
+
+.time-select .ant-select-selector {
+    @apply !bg-[#F2F2F2] w-60 !pr-1
+}
+
+.time-select .ant-select-arrow {
+    @apply !hidden
+}
+
+.time-select.ant-select-multiple .ant-select-selection-overflow {
+    @apply max-h-16 overflow-y-scroll overflow-x-hidden
+}
+
+.time-select ::-webkit-scrollbar {
+    @apply w-[10px]
+}
+
+.time-select ::-webkit-scrollbar-track {
+    @apply bg-[#F2F2F2]
+}
+
+.time-select ::-webkit-scrollbar-thumb {
+    @apply bg-[#8888] rounded-full
+}

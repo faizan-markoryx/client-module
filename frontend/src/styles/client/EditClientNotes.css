@@ -1,0 +1,67 @@
+.edit-client-note-section .ant-modal-content {
+  @apply p-0 h-[30rem] w-[75rem] right-80 rounded-[10px] z-[999999];
+}
+
+.edit-client-note-section .ant-modal-close {
+  @apply text-primary text-xl outline-none hidden;
+}
+
+.edit-header-section {
+  @apply w-[100%] h-[3.5rem] bg-primary flex justify-center items-center text-xl rounded-tl-[10px] rounded-tr-[10px];
+}
+
+.edit-header-section .all-client-data-head {
+  @apply h-[60px] flex justify-center items-center text-xl font-semibold text-white;
+}
+
+.edit-client-table-division {
+  @apply pt-6 pr-3 pb-8 pl-6 h-[432px];
+}
+
+.edit-client-table-division .all-client-note-last-end-section {
+  @apply flex items-center justify-end gap-2;
+}
+
+.client-middle-detail-section .client-note-data-details {
+  @apply flex flex-row text-lg border-b-2;
+}
+
+.client-note-data-details .table-th-note {
+  @apply w-full pt-2 pl-4 pb-4 text-primary font-semibold text-sm flex justify-start items-end;
+}
+
+.edit-client-tbody-section {
+  @apply h-full w-full;
+}
+
+.client-middle-detail-section .edit-client-tbody-section .client-note-row-sec {
+  @apply flex justify-start items-start text-start w-[100%] h-auto border-b-2 p-2;
+}
+
+.edit-client-tbody-section .client-note-row-sec .edit-client-tbody-td {
+  @apply w-[100%] pl-2 text-sm font-semibold justify-start items-start overflow-hidden block;
+}
+
+.edit-client-tbody-section .client-note-row-sec .edit-note-add-delete-sec {
+  @apply w-[100%] pl-0 flex text-2xl gap-1 text-primary items-start text-center;
+}
+
+/* // all client note data scrollbar //  */
+
+.client-middle-detail-section::-webkit-scrollbar {
+  @apply w-[12px];
+}
+
+.client-middle-detail-section::-webkit-scrollbar-track {
+  @apply rounded-[10px] bg-gray-300;
+}
+
+.client-middle-detail-section::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 rounded-[10px];
+}
+
+/* // loader CSS //  */
+
+.client-note-loader-division.ant-spin .ant-spin-dot {
+  @apply mt-48 ml-[35rem];
+}

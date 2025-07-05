@@ -1,0 +1,34 @@
+.main-login-container {
+    @apply bg-[#EDF1F4] h-screen flex justify-center items-center
+}
+.login-sec-form .login-email-inp {
+    @apply h-11 w-80 rounded-lg pl-6 hover:border-[#00b282] focus:outline-none focus:border-[#00b282] border-2
+}
+
+.login-sec-form .login-pass-inp {
+    @apply h-11 w-80 rounded-lg pl-6 hover:border-[#00b282] border-2 focus:outline-none focus:border-[#00b282]
+}
+
+.content-login-box .login-sec-form {
+    @apply flex flex-col gap-5 items-center
+}
+
+.main-login-container .back-logo {
+    @apply h-screen absolute -left-[238px] -top-4
+}
+
+.main-login-container .content-login-box {
+    @apply bg-[#265F9D] h-[37rem] w-[30rem] rounded-xl flex flex-col items-center justify-center
+}
+
+.content-login-box .login-header-sec {
+    @apply flex justify-center items-center flex-col
+}
+
+.login-header-sec .client-text-on-login {
+    @apply text-white text-3xl font-thin font-sans mb-6 tracking-wide
+}
+
+.login-sec-form .login-but {
+    @apply w-56 h-[50px] border-solid border border-white !text-white text-lg rounded-lg mt-11 hover:bg-[#00b282] hover:!text-white hover:border-[#00b282] hover:transition hover:duration-1000 hover:ease-in-out
+}

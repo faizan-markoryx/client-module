@@ -1,0 +1,113 @@
+/* // client modal CSS antd // */
+
+.client-table-head-add-client {
+  @apply h-[38px] w-[90px] bg-[#265f9d] text-[#FFFFFF] text-[14px] font-[500] flex items-center justify-center rounded-[5px] mx-1 hover:bg-opacity-80 ease-in-out duration-300;
+}
+
+.add-client-pop-modal.ant-modal .ant-modal-content {
+  @apply h-fit w-[94%] py-[1vh] px-[3vh];
+}
+
+.add-clint-wrap .ant-modal-body {
+  @apply w-full h-full 
+}
+.add-clint-wrap .ant-modal-body .main-form-for-client-modal{
+  @apply w-full h-full bg-yellow-400
+}
+
+.main-clint-popUp-body {
+  @apply w-full h-full  
+}
+
+.main-clint-popUp-body .clint-btn-sec {
+  @apply py-2 h-[9vh];
+}
+
+.add-client-pop-modal .add-client-header-sec {
+  @apply h-full w-[22%] rounded-tr-full bg-primary text-white text-lg flex justify-center items-center ; 
+}
+
+.main-clint-popUp-body .all-input-sec {
+  height: calc(100% - 12%);
+  @apply flex flex-col gap-[1vh];
+}
+
+.add-client-pop-modal .main-add-client-section {
+  @apply flex justify-between flex-wrap w-full text-[#043c79] bg-secondary rounded-md border-[1px] border-secondary h-[90%];
+}
+
+.main-add-client-section .add-client-main-form {
+  @apply flex flex-col mx-[30px] my-[1vh] h-fit;
+}
+
+.main-add-client-section .add-client-main-form .client-label-sec {
+  @apply text-[#043c79] mb-[3px] font-semibold;
+}
+
+.main-add-client-section .add-client-main-form .client-input-sec {
+  @apply h-11 w-[290px] pl-[10px] pr-[10px] bg-white rounded-lg outline-none border-[1px] border-[#d9d9d9] hover:border-[1px] hover:border-black focus:border-[1px] focus:border-black mt-1 text-black shadow-sm;
+}
+
+.main-add-client-section .add-client-main-form .client-input-sec2 {
+  @apply h-11 w-[290px] pl-[10px] pr-[10px] bg-white rounded-lg outline-none border border-[red] mt-1 text-black shadow-sm
+}
+
+.main-add-client-section .add-client-main-form .client-add-note-textarea {
+  @apply h-[59px] xl:w-[290px] lg:w-[290px] p-2 resize-none outline-none bg-white rounded-lg align-bottom border-[1px] border-[#d9d9d9];
+}
+
+.add-client-main-form .client-select-modal-section .ant-select-selector {
+  @apply w-[290px] h-11 p-0 pl-[10px] bg-white border-[1px] border-[#d9d9d9] hover:border-[1px]  hover:!border-[black] focus:!border-none focus:!shadow-none hover:active:!border-none !flex !justify-center !items-center;
+}
+
+.add-client-main-form .client-select-modal-section2 .ant-select-selector {
+  @apply w-[290px] h-11 p-0 pl-[10px] bg-white border border-[red] focus:!shadow-none hover:active:!border-none !flex !justify-center !items-center;
+}
+
+.add-client-main-form .client-select-modal-section .ant-select-selector .ant-select-selection-search-input {
+  @apply h-[100%];
+}
+
+.add-client-pop-modal.ant-modal .ant-modal-close {
+  @apply text-primary outline-none;
+}
+
+.add-client-pop-modal.ant-modal .ant-modal-close-x {
+  @apply text-xl bg-none;
+}
+
+.client-select-modal-section .add-contact-input-field.ant-picker-input {
+  @apply w-[270px] h-[2.2rem];
+}
+
+.client-select-modal-section .add-contact-input-field.ant-picker {
+  @apply bg-white border-[1px] border-[#d9d9d9] hover:border-[1px] hover:!border-[black] focus:!border-none focus:!shadow-none shadow-sm;
+}
+
+.add-client-pop-modal .add-client-last-btn {
+  @apply flex justify-center gap-[30px] items-center h-[10%] py-2;
+}
+
+.add-client-pop-modal .add-client-last-btn .client-submit-click {
+  @apply h-[52px] w-[130px] outline-none border-none font-semibold cursor-pointer bg-[#00B282] text-xl text-white rounded-[10px];
+}
+
+.add-client-pop-modal .add-client-last-btn .client-clear-click {
+  @apply h-[52px] w-[130px] outline-none border-none font-semibold cursor-pointer bg-[#A4A5A5] text-xl text-white rounded-[10px];
+}
+
+.client-add-note-textarea::-webkit-scrollbar {
+  @apply w-[12px];
+}
+
+.client-add-note-textarea::-webkit-scrollbar-track {
+  @apply bg-[#ffffff];
+}
+
+.client-add-note-textarea::-webkit-scrollbar-thumb {
+  @apply bg-[#edeaea] rounded-[20px];
+}
+ 
+.add-clint-wrap .ant-modal {
+  @apply !w-full !h-full !flex !justify-center !items-center max-w-none top-0 bottom-0 overflow-y-hidden;
+}

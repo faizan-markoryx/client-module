@@ -1,0 +1,3 @@
+.dashboard-right-container{
+    @apply bg-white w-[70%] h-[98%] rounded-xl p-[1%] shadow-3xl
+}

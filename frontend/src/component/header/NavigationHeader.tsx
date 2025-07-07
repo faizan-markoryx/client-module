@@ -4,7 +4,8 @@ import { MdInsertChart } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaBell, FaUserFriends } from "react-icons/fa";
 import { TbPhoneCall, TbReport } from "react-icons/tb";
-import headerLogo from "../../assets/Wiseskulls_logo.png";
+// import headerLogo from "../../assets/Wiseskulls_logo.png";
+import headerLogo from "../../assets/images/logo-light.svg";
 import headerLogoText from "../../assets/Wiseskulls_Text.png";
 import "../../../src/styles/NavigationHeader.css";
 import { Badge } from "antd";
@@ -115,11 +116,11 @@ const NavigationHeader = () => {
         <div className="img-section ">
           <Link to={"/dashboard"}>
             {" "}
-            <img src={headerLogo} className="skulls-img" alt="" />
+            <img src={headerLogo} className="w-[84px]" alt="" />
           </Link>
-          <Link to={"/dashboard"}>
+          {/* <Link to={"/dashboard"}>
             <img src={headerLogoText} className="text-logo" alt="" />
-          </Link>
+          </Link> */}
         </div>
         <div className="flex gap-1 items-center">
           {headerList?.map((e: any, index) => {

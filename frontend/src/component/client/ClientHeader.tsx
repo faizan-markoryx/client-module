@@ -31,7 +31,7 @@ const ClientHeader = ({
   const { role } = useSelector((state: any) => state?.user?.userData);
 
   return (
-    <div className="bg-[#E6E6E6] w-full max-h-[50px] h-auto px-5  rounded-t-[10px] flex justify-between">
+    <div className="bg-[#E6E6E6] w-full max-h-[50px] h-auto rounded-t-[10px] flex justify-between">
       <ClientSearch setSearchData={setSearchData} searchData={searchData} />
 
       <div className="flex items-center justify-between gap-x-[12px]">

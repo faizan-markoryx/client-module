@@ -1,7 +1,7 @@
 /* // client modal CSS antd // */
 
 .client-table-head-add-client {
-  @apply h-[38px] w-[90px] bg-[#265f9d] text-[#FFFFFF] text-[14px] font-[500] flex items-center justify-center rounded-[5px] mx-1 hover:bg-opacity-80 ease-in-out duration-300;
+  @apply py-2 px-4 bg-[#265f9d] text-[#FFFFFF] text-[14px] font-[500] flex items-center justify-center rounded-[5px] mx-1 hover:bg-opacity-80 ease-in-out duration-300;
 }
 
 .add-client-pop-modal.ant-modal .ant-modal-content {

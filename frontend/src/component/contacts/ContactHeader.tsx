@@ -35,7 +35,7 @@ const ClientHeader = ({
   const isOwner: any = localStorage.getItem("isOwnerData");
 
   return (
-    <div className="bg-[#E6E6E6] w-full max-h-[50px] h-auto px-5  rounded-t-[10px] flex justify-between">
+    <div className="bg-[#E6E6E6] w-full max-h-[50px] h-auto rounded-t-[10px] flex justify-between">
       <ContactsSearch
         searchValue={searchValue}
         setSearchValue={setSearchValue}

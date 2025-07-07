@@ -1,7 +1,7 @@
 import { useState } from "react";
-import logo from "../../assets/Wiseskulls_logo.png";
-import text from "../../assets/Wiseskulls_Text.png";
-import GreyLogo from "../../assets/wise_back_logo_Grey.png";
+// import logo from "../../assets/Wiseskulls_logo.png";
+// import text from "../../assets/Wiseskulls_Text.png";
+// import GreyLogo from "../../assets/wise_back_logo_Grey.png";
 
 import bgLogin from "../../assets/images/login-bg.jpg"
 // import bgLogin from "../../assets/images/login-bg5.png"
@@ -11,7 +11,7 @@ import "../../styles/Login.css";
 import { userLogin } from "../../services/loginServices";
 import { setUserLogin } from "../../redux/loginSlice";
 import { useDispatch } from "react-redux";
-import { Button } from "antd";
+// import { Button } from "antd";
 
 const Login = () => {
 

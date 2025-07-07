@@ -6,7 +6,7 @@ import { FaBell, FaUserFriends } from "react-icons/fa";
 import { TbPhoneCall, TbReport } from "react-icons/tb";
 // import headerLogo from "../../assets/Wiseskulls_logo.png";
 import headerLogo from "../../assets/images/logo-light.svg";
-import headerLogoText from "../../assets/Wiseskulls_Text.png";
+// import headerLogoText from "../../assets/Wiseskulls_Text.png";
 import "../../../src/styles/NavigationHeader.css";
 import { Badge } from "antd";
 import { Link, useLocation } from "react-router-dom";

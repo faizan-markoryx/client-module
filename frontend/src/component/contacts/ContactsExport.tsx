@@ -381,7 +381,7 @@ const ClientExport = () => {
       const worksheetName = workbook.SheetNames[0];
       const worksheet = workbook.Sheets[worksheetName];
       const data: any = XLSX.utils.sheet_to_json(worksheet);
-      if(data?.length <= 3000){
+      if(data?.length <= 7000){
         setIsExportingOpen(true);
         const finalData: any = data?.map((e: any) => ({
           ...e,
@@ -407,7 +407,7 @@ const ClientExport = () => {
           message.warning("Please add some data in file.");
         }
       }else{
-        message.warning("You can add only 3000 data at a time.");
+        message.warning("You can add only 7000 data at a time.");
       }          
     }
   };

@@ -22,7 +22,7 @@ const ClientHeader = ({
   const { userData }: any = useSelector((state: any) => state.user);
   const [isColumnPopupModel, setIsColumnPopupModel]: any = useState(false);
 
-  const { contactData: contactDataObj, contactTablePagination: paginationData }: any = useSelector((state: any) => state.contact)
+  const { contactData: contactDataObj }: any = useSelector((state: any) => state.contact)
 
   const isMultifilterOn = () => {
     return Object.values(contactData).map((ele: any) => {

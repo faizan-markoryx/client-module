@@ -27,6 +27,23 @@ const ContactAddNote = ({ row, ele }: any) => {
   const [isAddNote, setIsAddNote] = useState(false);
   const [isLoaderSave, setIsLoaderSave] = useState(false);
   const [notificationAddNoteId, setNotificationAddNoteId] = useState("");
+
+
+  const [isAddReq, setIsAddReq] = useState(false)
+  const [isSaving, setIsSaving] = useState(false)
+  const [reqData, setReqData] = useState({
+    title: "",
+    location: "",
+    duration: "",
+    type: "",
+    rate: "",
+    visa: "",
+    skills: "",
+    endClient: "",
+    partner: "",
+  });
+
+
   const select = useSelector(
     (state: any) => state?.contact?.contactTableNoteData
   );
@@ -125,6 +142,17 @@ const ContactAddNote = ({ row, ele }: any) => {
     dispatch(setContactTableNoteData(data));
   };
 
+
+
+
+  const handleSubmitRequirement = (e: any) => {
+    console.log("e>>>>>", e)
+  }
+
+  const handleClearRequirement = () => {
+    console.log("Hello")
+  }
+
   return (
     <>
       {location.pathname !== "/notification" ? (
@@ -147,20 +175,39 @@ const ContactAddNote = ({ row, ele }: any) => {
               <span className="cursor-pointer overflow-hidden text-ellipsis">Add note</span>
             </span>
           ) : (
-            <button
-              className="add-more-but"
-              onClick={() => {
-                setIsAddNote(true);
-              }}
-            >
-              <BsPlusCircleFill
-                onClick={() => {
-                  setIsAddNote(true);
-                }}
-                className="text-[#00B282] text-xl"
-              />
-              Add More Notes
-            </button>
+            <>
+              <div className="flex justify-end items-center gap-6">
+                <button
+                  className="add-more-but"
+                  onClick={() => {
+                    setIsAddReq(true);
+                  }}
+                >
+                  <BsPlusCircleFill
+                    onClick={() => {
+                      setIsAddReq(true);
+                    }}
+                    className="text-[#F57C00] text-xl"
+                  />
+                  Add New Requirement
+                </button>
+                <button
+                  className="add-more-but"
+                  onClick={() => {
+                    setIsAddNote(true);
+                  }}
+                >
+                  <BsPlusCircleFill
+                    onClick={() => {
+                      setIsAddNote(true);
+                    }}
+                    className="text-[#F57C00] text-xl"
+                  />
+                  Add More Notes
+                </button>
+              </div>
+
+            </>
           )}
         </>
       ) : (
@@ -173,6 +220,8 @@ const ContactAddNote = ({ row, ele }: any) => {
         />
       )}
 
+
+      {/* Add Notes Model */}
       <Modal
         width={551}
         className="contact-add-note-popup"
@@ -464,6 +513,237 @@ const ContactAddNote = ({ row, ele }: any) => {
             </button>
           </div>
         </form>
+      </Modal>
+
+
+
+
+
+      {/* Add Req Model */}
+      <Modal
+        width={551}
+        className="contact-add-req-popup"
+        centered={true}
+        open={isAddReq}
+        onOk={() => setIsAddReq(false)}
+        onCancel={() => setIsAddReq(false)}
+        footer={null}
+        afterClose={() =>
+          setIsAddNoteData({
+            contactId: "",
+            note: "",
+            noteSource: "",
+            nextFollowUpDateTime: "",
+            timezone: "",
+            labels: [],
+            changeStandardComment: "",
+          })
+        }
+      >
+
+        <form onSubmit={handleSubmitRequirement}>
+          {/* Header */}
+          <div className="flex justify-between bg-[#121820] h-14 border-b items-center pl-5 pr-4 rounded-t-[10px]">
+            <h1 className="text-xl text-white">
+              Add Requirement For{" "}
+              <span>
+                {" "}
+                ({" "}
+                {location.pathname !== "/notification" ? (
+                  <>{select.fullName}</>
+                ) : (
+                  <>{ele?.contactName} </>
+                )}{" "}
+                )
+              </span>
+            </h1>
+            <span
+              onClick={() => setIsAddReq(false)}
+              className="text-2xl text-white cursor-pointer"
+            >
+              <AiOutlineClose />
+            </span>
+          </div>
+
+          {/* Form Content */}
+          <div className="flex flex-col gap-5 p-5">
+
+            {/* Req Title & Rate */}
+            <div className="flex gap-5">
+              <div className="flex flex-col w-full">
+                <label className="text-primary font-medium mb-1">
+                  Req Title:
+                </label>
+                <input
+                  required
+                  type="text"
+                  value={reqData.title}
+                  onChange={(e) => setReqData({ ...reqData, title: e.target.value })}
+                  className="bg-[#F2F2F2] pl-3 py-1 border border-gray-300 hover:border-black focus:border-black focus:outline-none rounded-lg"
+                />
+              </div>
+              <div className="flex flex-col w-full">
+                <label className="text-primary font-medium mb-1">Rate:</label>
+                <input
+                  type="text"
+                  value={reqData.rate}
+                  onChange={(e) => setReqData({ ...reqData, rate: e.target.value })}
+                  className="bg-[#F2F2F2] pl-3 py-1 border border-gray-300 hover:border-black focus:border-black focus:outline-none rounded-lg"
+                />
+              </div>
+            </div>
+
+
+            {/* Visa Type */}
+            <div className="flex flex-row w-full gap-5">
+              <div className="flex flex-col w-[50%]">
+                <label className="text-primary font-medium mb-1">Country:</label>
+                <Select
+                  className="time-select"
+                  value={reqData.visa}
+                  style={{ width: "100%" }}
+                  onChange={(value) => setReqData({ ...reqData, visa: value })}
+                  options={[
+                    { value: "United State", label: "United State" }, 
+                    { value: "India", label: "India" },
+                  ]}
+                />
+              </div>
+              <div className="flex flex-col w-[50%]">
+                <label className="text-primary font-medium mb-1">State And City</label>
+                <input
+                  type="text"
+                  value={reqData.rate}
+                  onChange={(e) => setReqData({ ...reqData, rate: e.target.value })}
+                  className="bg-[#F2F2F2] pl-3 py-1 border border-gray-300 hover:border-black focus:border-black focus:outline-none rounded-md"
+                />
+
+              </div>
+
+            </div>
+
+            {/* Location, Duration, Type */}
+            <div className="flex gap-5">
+              <div className="flex flex-col w-full">
+                {/* <label className="text-primary font-medium mb-1">Location:</label>
+                <Select
+                  className="time-select"
+                  value={reqData.location}
+                  style={{ width: "100%" }}
+                  onChange={(value) => setReqData({ ...reqData, location: value })}
+                  options={[
+                    { value: "Remote", label: "Remote" },
+                    { value: "Onsite", label: "Onsite" },
+                    { value: "Hybrid", label: "Hybrid" },
+                  ]}
+                /> */}
+
+                <label className="text-primary font-medium mb-1">Accept Visa Type:</label>
+                <Select
+                  className="time-select"
+                  value={reqData.visa}
+                  style={{ width: "100%" }}
+                  onChange={(value) => setReqData({ ...reqData, visa: value })}
+                  options={[
+                    { value: "USC/GC", label: "USC/GC" },
+                    { value: "H1B", label: "H1B" },
+                    { value: "OPT", label: "OPT" },
+                    { value: "EAD", label: "EAD" },
+                    { value: "Any", label: "Any" },
+                  ]}
+                />
+              </div>
+              <div className="flex flex-col w-full">
+                <label className="text-primary font-medium mb-1">Duration:</label>
+                <Select
+                  className="time-select"
+                  value={reqData.duration}
+                  style={{ width: "100%" }}
+                  onChange={(value) => setReqData({ ...reqData, duration: value })}
+                  options={[
+                    { value: "3 Months", label: "3 Months" },
+                    { value: "6 Months", label: "6 Months" },
+                    { value: "12 Months", label: "12 Months" },
+                    { value: "Full Time", label: "Full Time" },
+                  ]}
+                />
+              </div>
+              <div className="flex flex-col w-full">
+                <label className="text-primary font-medium mb-1">Type:</label>
+                <Select
+                  className="time-select"
+                  value={reqData.type}
+                  style={{ width: "100%" }}
+                  onChange={(value) => setReqData({ ...reqData, type: value })}
+                  options={[
+                    { value: "OnSite", label: "OnSite" },
+                    { value: "Hybrid", label: "Hybrid" },
+                    { value: "Remote", label: "Remote" },
+                  ]}
+                />
+              </div>
+            </div>
+
+
+            {/* Skills */}
+            <div className="flex flex-col">
+              <label className="text-primary font-medium mb-1">
+                Skills:
+              </label>
+              <textarea
+                required
+                value={reqData.skills}
+                onChange={(e) => setReqData({ ...reqData, skills: e.target.value })}
+                className="bg-[#F2F2F2] pl-3 pt-1 resize-none hover:border-black focus:border-black border border-gray-300 focus:outline-none h-[125px] w-full rounded-md"
+              />
+            </div>
+
+            {/* End Client & Partner */}
+            <div className="flex gap-5">
+              <div className="flex flex-col w-full">
+                <label className="text-primary font-medium mb-1">End Client:</label>
+                <input
+                  type="text"
+                  value={reqData.endClient}
+                  onChange={(e) => setReqData({ ...reqData, endClient: e.target.value })}
+                  className="bg-[#F2F2F2] pl-3 py-1 border border-gray-300 hover:border-black focus:border-black focus:outline-none rounded-md"
+                />
+              </div>
+              <div className="flex flex-col w-full">
+                <label className="text-primary font-medium mb-1">Implementation Partner:</label>
+                <input
+                  type="text"
+                  value={reqData.partner}
+                  onChange={(e) => setReqData({ ...reqData, partner: e.target.value })}
+                  className="bg-[#F2F2F2] pl-3 py-1 border border-gray-300 hover:border-black focus:border-black focus:outline-none rounded-md"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Footer Buttons */}
+          <div className="flex gap-3 justify-end pr-5 pb-5">
+            <Button
+              loading={isLoaderSave}
+              disabled={isLoaderSave}
+              htmlType="submit"
+              className="bg-[#F57C00] h-9 w-24 rounded-md text-white hover:!text-white"
+            >
+              ADD
+            </Button>
+
+            <Button
+              loading={isLoaderSave}
+              disabled={isLoaderSave}
+              htmlType="submit"
+              className="bg-[#A4A5A5] h-9 w-24 rounded-md text-white hover:!text-white"
+            >
+              Clear
+            </Button>
+          </div>
+        </form>
+
+
       </Modal>
     </>
   );

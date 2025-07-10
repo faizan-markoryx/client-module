@@ -6,6 +6,8 @@ import Users from "../pages/Users";
 import Reports from "../pages/Reports";
 import Contacts from "../pages/Contacts";
 import NotificationSection from "../component/header/NotificationSection";
+import Positions from "../pages/Positions";
+import Submitions from "../pages/Submitions";
 
 const routes: any = (isUser: any, isAdmin: any) => [
   {
@@ -39,6 +41,16 @@ const routes: any = (isUser: any, isAdmin: any) => [
   {
     path: "/contacts",
     element: isUser ? <Contacts /> : <Navigate to={"/login"} />,
+  },
+
+  {
+    path: "/positions",
+    element: isUser ? <Positions /> : <Navigate to={"/login"} />,
+  },
+
+  {
+    path: "/submitions",
+    element: isUser ? <Submitions /> : <Navigate to={"/login"} />,
   },
 
   {

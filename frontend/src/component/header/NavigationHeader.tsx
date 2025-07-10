@@ -19,6 +19,10 @@ import { AiFillExclamationCircle, AiOutlinePoweroff } from "react-icons/ai";
 import { setUserLogOut } from "../../redux/loginSlice";
 
 
+import { MdAssignment } from "react-icons/md";
+import { MdUploadFile } from "react-icons/md";
+
+
 const NavigationHeader = () => {
   const location = useLocation();
   const [showMenu, setShowMenu] = useState(false);
@@ -50,6 +54,16 @@ const NavigationHeader = () => {
       title: "Contacts",
       icon: <TbPhoneCall />,
       path: "/contacts",
+    },
+    {
+      title: "Positions",
+      icon: <MdAssignment />,
+      path: "/positions",
+    },
+    {
+      title: "Submitions",
+      icon: <MdUploadFile />,
+      path: "/submitions",
     },
     {
       title: "",
@@ -250,7 +264,7 @@ const NavigationHeader = () => {
                     className="log-out-icon "
                     onClick={() => setIsConfirm(true)}
                   >
-                    <AiOutlinePoweroff className='text-[22px] pt-[3px]'/>
+                    <AiOutlinePoweroff className='text-[22px] pt-[3px]' />
                     Log out</button>
                   {isConfirm &&
                     <>

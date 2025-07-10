@@ -34,3 +34,21 @@
 .time-select ::-webkit-scrollbar-thumb {
     @apply bg-[#8888] rounded-full
 }
+
+
+
+
+
+
+
+.contact-add-req-popup.ant-modal .ant-modal-content {
+    @apply !h-[620px] !pt-0 !pl-0 !pr-0 rounded-xl
+}
+
+.contact-add-req-popup .ant-modal-close {
+    @apply !hidden
+}
+
+.contact-add-req-popup .ant-picker-footer {
+    @apply !hidden
+}

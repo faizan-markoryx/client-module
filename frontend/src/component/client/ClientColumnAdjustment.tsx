@@ -15,7 +15,7 @@ const ClientColumnAdjustment = ({
     <>
       <div className="text-black" onClick={() => setDragAndDropModal(true)}>
         <svg
-          className={`w-[33px] h-[33px] hover:fill-primary  cursor-pointer ease-in-out duration-300 ${
+          className={`w-[33px] h-[33px] hover:fill-[#121820]  cursor-pointer ease-in-out duration-300 ${
             columnOrder?.length > 0 ||
             (columnVisibility && Object?.keys(columnVisibility)?.length > 0)
               ? "stroke-primary fill-primary"

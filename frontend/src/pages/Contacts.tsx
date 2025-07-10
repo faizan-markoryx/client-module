@@ -21,6 +21,8 @@ const Contacts = () => {
   const dispatch: any = useDispatch();
   const [isLoader, setIsLoader]: any = useState(false);
 
+  console.log("contactObj>>>",contactObj)
+
   useEffect(() => {
     if (searchValue.length !== 0) {
       const bounce = setTimeout(() => {
@@ -30,7 +32,7 @@ const Contacts = () => {
           ...contactObj,
           isAllData: JSON.parse(isOwner),
           searchBy: searchValue,
-          page: 1,
+          page: contactObj?.page,
         };
         contactMultiSearch(body)
           .then((res: any) => {

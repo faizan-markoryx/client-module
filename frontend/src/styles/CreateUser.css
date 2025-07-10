@@ -18,7 +18,7 @@
 }
 
 .main-create-user-div .modal-header-section {
-  @apply flex justify-between items-center w-[100%] h-[3rem] bg-primary rounded-t-md;
+  @apply flex justify-between items-center w-[100%] h-[3rem] bg-[#121820] rounded-t-md;
 }
 .main-create-user-div .add-user-txt {
   @apply text-[20px]  text-white font-semibold;
@@ -40,7 +40,7 @@
 }
 
 .main-create-user-div .lab-for-details {
-  @apply text-[16px] text-[#265F9D];
+  @apply text-[16px] text-[#121820];
 }
 .main-create-user-div .star-section {
   @apply text-[16px] mr-[2px] text-[red] font-semibold;
@@ -64,5 +64,5 @@
   @apply flex justify-center pb-5;
 }
 .main-create-user-div .submit-but {
-  @apply font-semibold bg-[#265F9D] w-[6rem] h-[2.5rem] rounded-md text-white;
+  @apply font-semibold bg-[#121820] w-[6rem] h-[2.5rem] rounded-md text-white;
 }

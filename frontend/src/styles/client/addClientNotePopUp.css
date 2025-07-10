@@ -19,7 +19,7 @@
 }
 
 .add-note-pop-modal .add-note-main-section .add-note-header-sec {
-  @apply h-14 pt-3 pl-6 bg-primary text-white text-xl font-semibold;
+  @apply h-14 pt-3 pl-6 bg-[#121820] text-white text-xl font-semibold;
 }
 
 .add-note-pop-modal .note-first-section {
@@ -31,7 +31,7 @@
 }
 
 .note-first-section .note-label-sec {
-  @apply text-sm text-primary font-semibold;
+  @apply text-sm text-[#121820] font-semibold;
 }
 
 .note-first-section .note-textarea-sec {

@@ -135,7 +135,7 @@ const ContactDateFilter = ({ setIsFilterOn, state, column }: any) => {
             }}
           />
         </div>
-        <div className="input-check-div text-[15px] text-[#265f9d]">
+        <div className="input-check-div text-[15px] text-[#121820]">
           <div className="flex justify-around mt-5">
             <button className="submit-btn" onClick={handleMultiSearchSubmit}>
               submit

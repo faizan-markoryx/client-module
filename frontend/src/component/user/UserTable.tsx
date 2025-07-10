@@ -123,7 +123,7 @@ const UserTable = () => {
                 {headerGroup.headers.map((header: any) => (
                   <th
                     key={header.id}
-                    className="pl-2 pr-2 text-start user-th text-[#0e4d92]"
+                    className="pl-2 pr-2 text-start user-th text-[#121820]"
                   >
                     {header.isPlaceholder
                       ? null

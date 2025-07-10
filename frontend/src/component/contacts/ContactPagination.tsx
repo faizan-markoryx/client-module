@@ -10,6 +10,9 @@ const dispatch:any = useDispatch();
 
 const selectperPage = useSelector((state:any)=>state?.contact);
 
+
+// console.log("paginationData",paginationData)
+
   return (
    <>
    <div className="candidateHotlistAntdPaginationMainDiv">

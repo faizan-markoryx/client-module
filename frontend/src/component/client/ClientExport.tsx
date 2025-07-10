@@ -33,7 +33,7 @@ const ClientExport = () => {
       <div className="h-full w-[30px] mt-4 flex-col cursor-pointer" ref={wrapperRef}>
         <div onClick={() => setExportOpenClose(!exportOpenClose)}>
           <div className="w-full flex justify-center items-center">
-            <TfiExchangeVertical size={27} className={`text-[#A4A5A5] hover:text-primary`} />
+            <TfiExchangeVertical size={27} className={`text-[#A4A5A5] hover:text-[#121820]`} />
           </div>
         </div>
         {

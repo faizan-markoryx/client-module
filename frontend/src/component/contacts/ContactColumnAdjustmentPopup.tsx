@@ -285,7 +285,7 @@ const ContactColumnAdjustmentPopup = ({ isColumnPopupModel, setIsColumnPopupMode
                     >
                         Cancel
                     </button>
-                    <button className="w-[5.5rem] h-[2.3rem] bg-[#00B282] text-white rounded-md font-semibold" onClick={handleApply}>
+                    <button className="w-[5.5rem] h-[2.3rem] bg-[#F57C00] text-white rounded-md font-semibold" onClick={handleApply}>
                         Apply
                     </button>
                 </div>

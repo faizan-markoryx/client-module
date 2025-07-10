@@ -22,7 +22,7 @@
 /* // add client export popup modal CSS //  */
 
 .client-export-popup-modal .client-contact-export-header {
-  @apply h-14 pt-3 pl-6 bg-primary text-white text-xl font-semibold;
+  @apply h-14 pt-3 pl-6 bg-[#121820] text-white text-xl font-semibold;
 }
 
 .client-export-popup-modal .export-client-all-details {

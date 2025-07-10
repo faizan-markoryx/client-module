@@ -55,7 +55,7 @@
 }
 
 .contact-pop-modal .addContact-heading {
-  @apply !h-14 w-72 flex justify-center font-normal  text-lg items-center text-white bg-primary rounded-tr-full;
+  @apply !h-14 w-72 flex justify-center font-normal  text-lg items-center text-white bg-[#F57C00] rounded-tr-full;
 }
 
 .main-contact-popUp-body .all-input-sec {
@@ -71,11 +71,11 @@
 }
 
 .contact-form-main .add-contact-label-input .add-contact-label {
-  @apply font-semibold;
+  @apply font-semibold text-[#121820];
 }
 
 .add-contact-label-input .note-source-sec {
-  @apply text-primary font-semibold;
+  @apply text-[#121820] font-semibold;
 }
 
 .add-contact-label-input .radio-btn {
@@ -95,15 +95,15 @@
 }
 
 .add-contact-right-btn {
-  @apply flex justify-center gap-[15px] w-[100%] p-[1%];
+  @apply flex justify-center items-center gap-[15px] w-[100%] p-[1%];
 }
 
 .add-contact-right-btn .add-contact-submit {
-  @apply h-[52px] w-[130px] bg-[#00B282]  border-none outline-none text-white rounded-[5px] font-semibold text-lg  hover:text-white cursor-pointer font-mulish;
+  @apply h-[48px] w-[130px] bg-[#121820]  border-none outline-none text-white rounded-[5px] font-semibold text-lg  hover:text-white cursor-pointer font-mulish;
 }
 
 .add-contact-right-btn .add-contact-clear {
-  @apply h-[52px] w-[110px] bg-[#A4A5A5] border-none  outline-none text-white rounded-[5px] font-semibold text-lg cursor-pointer font-mulish hover:text-white;
+  @apply h-[48px] w-[110px] bg-[#A4A5A5] border-none  outline-none text-white rounded-[5px] font-semibold text-lg cursor-pointer font-mulish hover:text-white;
 }
 
 .date-ok-button .ant-btn-primary {

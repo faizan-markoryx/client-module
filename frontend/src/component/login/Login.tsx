@@ -160,7 +160,7 @@ const Login = () => {
               <span
                 className="absolute inset-0 w-full h-full bg-[#F57C00] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 delay-150 ease-out origin-left"
               ></span>
-              <span className="relative z-10 delay-200 transition-all duration-300">Login</span>
+              <span className="relative z-10 delay-200 transition-all duration-300">{btnLoader ? 'Loading...' : 'Login'}</span>
             </button>
           </form>
         </div>

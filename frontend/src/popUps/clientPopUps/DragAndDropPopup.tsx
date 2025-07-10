@@ -239,7 +239,7 @@ const DragAndDropPopup = ({
           Cancel
         </button>
         <button
-          className="font-semibold w-[5.5rem] h-[2.3rem] bg-[#00B282] text-white rounded-md hover:opacity-80 ease-in duration-300"
+          className="font-semibold w-[5.5rem] h-[2.3rem] bg-[#F57C00] text-white rounded-md hover:opacity-80 ease-in duration-300"
           onClick={handleApply}
         >
           Apply

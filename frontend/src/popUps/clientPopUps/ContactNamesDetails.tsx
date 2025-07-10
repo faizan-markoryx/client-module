@@ -224,7 +224,7 @@ const ContactNamesDetails = ({ cell }: any) => {
       <div className="flex">
 
         <span
-          className="max-w-[150px] overflow-hidden text-ellipsis cursor-pointer"
+          className="max-w-[150px] overflow-hidden text-ellipsis cursor-pointer text-[#F57C00]"
           onClick={() => setClientFirstNameData(true)}
         >
           {cell.fullName}

@@ -23,7 +23,7 @@
 }
 
 .client-import-all-detail-pop .client-import-middle-details {
-  @apply flex justify-center items-center gap-[8px] cursor-pointer text-primary font-medium;
+  @apply flex justify-center items-center gap-[8px] cursor-pointer text-[#F57C00] font-medium;
 }
 
 .client-import-all-detail-pop .client-import-drag-drop-section {
@@ -44,7 +44,7 @@
 }
 
 .client-import-drag-drop-section .drag-drop-sec .client-browse-import {
-  @apply text-primary text-[22px] font-medium;
+  @apply text-[#F57C00] text-[22px] font-medium;
 }
 
 .client-import-drag-drop-section .drag-drop-sec .client-file-allowed {
@@ -64,5 +64,5 @@
 }
 
 .client-import-all-detail-pop .client-import-btn .client-submit-click {
-  @apply h-12 w-[110px] mt-6 bg-primary text-white rounded-[5px] p-0 outline-none border-[1px] border-transparent cursor-pointer text-sm font-semibold;
+  @apply h-10 w-[140px] mt-6 bg-[#121820] text-white rounded-[5px] p-0 outline-none border-[1px] border-transparent cursor-pointer text-sm font-semibold;
 }

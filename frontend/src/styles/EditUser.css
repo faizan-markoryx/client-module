@@ -26,7 +26,7 @@
 }
 
 .editModalMainDiv .modal-header-section{
-    @apply  flex justify-between items-center w-[100%] h-[3rem] bg-primary rounded-t-md
+    @apply  flex justify-between items-center w-[100%] h-[3rem] bg-[#121820] rounded-t-md
 }
 .editModalMainDiv .add-user-txt{
     @apply  text-[20px]  text-white font-semibold
@@ -43,7 +43,7 @@
 
 
 .editModalMainDiv .lab-for-details{
-    @apply text-[16px] text-[#265F9D]
+    @apply text-[16px] text-[#121820]
    
 }
 .editModalMainDiv .star-section{
@@ -59,7 +59,7 @@
     @apply  flex justify-center pt-6 pb-6
 }
 .editModalMainDiv .submit-but{
-    @apply  font-semibold bg-[#265F9D] w-[6rem] h-[2.5rem] rounded-md text-white
+    @apply  font-semibold bg-[#121820] w-[6rem] h-[2.5rem] rounded-md text-white
 }
 
 .editModalMainDiv .ant-select-selection-item{

@@ -332,7 +332,7 @@ const ContactMultiFilter = ({ tableData, column }: any) => {
                   onChange={(e: any) => setSearchInputData(e.target.value)}
                 />
               </div>
-              <div className="input-check-div text-[15px] text-[#265f9d]">
+              <div className="input-check-div text-[15px] text-[#121820]">
                 <div className="select-all py-2 flex gap-2">
                   <input
                     checked={

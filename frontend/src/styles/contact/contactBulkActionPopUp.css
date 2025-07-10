@@ -11,7 +11,7 @@
 }
 
 .contact-bulk-head-division {
-  @apply h-14 pt-[16px] pl-[24px] bg-primary;
+  @apply h-14 pt-[16px] pl-[24px] bg-[#121820];
 }
 
 .contact-bulk-head-division .bulk-header-action {
@@ -27,7 +27,7 @@
 }
 
 .bulk-second-division .bulk-transfer-section .bulk-long-sec {
-  @apply border border-gray-400 w-full h-[35px] rounded-[10px] border-none bg-[#808080] text-xl text-white flex justify-center items-center font-semibold;
+  @apply border border-gray-400 w-full h-[35px] rounded-[6px] border-none bg-[#808080] text-[18px] text-white flex justify-center items-center font-semibold;
 }
 
 .bulk-transfer-section .download-excel-file-section {
@@ -39,11 +39,11 @@
 }
 
 .download-excel-file-section .excel-template-file .download-word-tem {
-  @apply text-[14px] text-primary font-semibold;
+  @apply text-[14px] text-[#121820] font-semibold;
 }
 
 .download-excel-file-section .excel-template-file .download-icon {
-  @apply text-xl text-primary;
+  @apply text-xl text-[#121820];
 }
 
 .bulk-transfer-section .owner-ship-division {
@@ -63,7 +63,7 @@
 }
 
 .bulk-submit-sec .submit-btn-click {
-  @apply border border-[#808080] w-[80px] h-[35px] mt-5 rounded-md bg-primary text-white;
+  @apply border border-[#808080] w-[80px] h-[35px] mt-5 rounded-md bg-[#121820] text-white hover:text-white;
 }
 
 .bulk-transfer-section .bulk-transfer-last-division {
@@ -71,7 +71,7 @@
 }
 
 .bulk-transfer-section .bulk-transfer-last-division .bulk-delete-section {
-  @apply border-gray-400 w-full h-[35px] rounded-[10px] border-none bg-[#808080] text-xl text-white flex justify-center items-center font-semibold;
+  @apply border-gray-400 w-full h-[35px] rounded-[6px] border-none bg-[#808080] text-lg text-white flex justify-center items-center font-semibold;
 }
 
 .bulk-transfer-last-division .bulk-delete-owner-email {
@@ -97,7 +97,7 @@
 .label-or-download-section
   .owner-email-download-template
   .download-excel-owner-email {
-  @apply text-[14px] text-primary font-semibold;
+  @apply text-[14px] text-[#121820] font-semibold;
 }
 
 .delete-btn-section {
@@ -105,7 +105,7 @@
 }
 
 .delete-btn-section .bulk-delete-btn-click {
-  @apply border-gray-600 border-none w-[80px] h-[35px] mt-5 rounded-md bg-red-500 text-white;
+  @apply border-gray-600 border-none w-[80px] h-[35px] mt-5 rounded-md bg-red-500 text-white hover:text-white;
 }
 
 .bulk-transfer-icon g path {
@@ -113,5 +113,5 @@
 }
 
 .bulk-transfer-icon:hover g path {
-  fill: rgb(38 95 157 / var(--tw-bg-opacity));
+  fill: #121820;
 }

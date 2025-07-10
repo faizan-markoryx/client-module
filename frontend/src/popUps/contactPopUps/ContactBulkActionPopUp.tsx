@@ -241,7 +241,7 @@ const ContactBulkActionPopUp = () => {
                         <p className="download-excel-owner-email">
                           Download Excel Template
                         </p>
-                        <AiOutlineDownload className="text-xl text-primary" />
+                        <AiOutlineDownload className="text-xl text-[#121820]" />
                       </div>
                     </a>
                   </div>

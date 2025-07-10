@@ -90,7 +90,7 @@ const AllContactNotes = ({ row, cell }: any) => {
   return (
     <>
       <span
-        className="flex text-primary items-center gap-1 pt-6 w-full h-[45.3px] "
+        className="flex text-[#F57C00] items-center gap-1 pt-6 w-full h-[45.3px] "
         onClick={() => {
           myNotes(row?.original);
           setIsModalOpen(true);

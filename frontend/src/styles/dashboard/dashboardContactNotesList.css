@@ -21,7 +21,7 @@
 }
 
 .createdByNameAndNote-container .createdByWord {
-    @apply text-primary font-bold xl:text-sm lg:text-xs
+    @apply text-[#F57C00] font-bold xl:text-sm lg:text-xs
 }
 
 .createdByNameAndNote-container .createdByNameWord {

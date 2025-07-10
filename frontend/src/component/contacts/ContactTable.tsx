@@ -125,7 +125,7 @@ const ContactTable = ({
                             // style={{ padding: "7px 10px 7px 32px" }}
                             className="client-th relative p-[7px 10px 7px 32px] my-[10px]  text-start first:pl-8 max-w-[50px]"
                           >
-                            <span className="flex items-center gap-x-1">
+                            <span className="flex items-center gap-x-1 accent-[#121820]">
                               {header.isPlaceholder
                                 ? null
                                 : flexRender(
@@ -395,7 +395,7 @@ const ContactTable = ({
                                 <td
                                   key={cell.id}
                                   // className="contacts-table-body-td"
-                                  className="text-start py-2 px-4 h-[45.3px] whitespace-nowrap text-[14px] font-[600] first:pl-8"
+                                  className="text-start py-2 px-4 h-[45.3px] whitespace-nowrap text-[14px] font-[600] first:pl-8 accent-[#121820]"
                                   style={{
                                     padding: "7px 10px 7px 32px",
                                     maxWidth: "50px",

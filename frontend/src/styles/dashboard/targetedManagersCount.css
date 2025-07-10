@@ -8,20 +8,20 @@
 
 .todayscall-and-connected-both-container
 .totalCountInNumber{
-    @apply text-primary text-5xl font-bold
+    @apply text-[#121820] text-5xl font-bold
 }
 
 .todayscall-and-connected-both-container
 .totalCallsConnectedWord{
-    @apply text-primary xl:text-xl font-bold lg:text-xl font-bold md:text-base md:font-bold
+    @apply text-[#121820] xl:text-xl font-bold lg:text-xl font-bold md:text-base md:font-bold
 }
 
 .todayscall-and-connected-both-container
 .todayWord{
-    @apply text-primary xl:text-xl font-bold lg:text-xl font-bold md:text-base md:font-bold
+    @apply text-[#121820] xl:text-xl font-bold lg:text-xl font-bold md:text-base md:font-bold
 }
 
 .todayTargetedManagersList-main-container
 .topManagersList{
-    @apply bg-[#1b90ff] w-full lg:h-9 md:h-12 flex justify-center items-center text-white font-bold xl:text-base lg:text-xs md:text-sm md:text-center md:p-[2%]
+    @apply bg-[#121820] rounded-md w-full lg:h-9 md:h-12 flex justify-center items-center text-white font-bold xl:text-base lg:text-xs md:text-sm md:text-center md:p-[2%]
 }

@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setContactData, setOwnerData } from "../../redux/contactSlice";
 import ResetFilter from "./ResetFilter";
 import ContactChangeStatusPopUp from "../../popUps/ContactChangeStatusPopUp";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ContactBulkActionPopUp from "../../popUps/contactPopUps/ContactBulkActionPopUp";
 
 const ClientHeader = ({
@@ -22,6 +22,8 @@ const ClientHeader = ({
   const { userData }: any = useSelector((state: any) => state.user);
   const [isColumnPopupModel, setIsColumnPopupModel]: any = useState(false);
 
+  const { contactData: contactDataObj, contactTablePagination: paginationData }: any = useSelector((state: any) => state.contact)
+
   const isMultifilterOn = () => {
     return Object.values(contactData).map((ele: any) => {
       if (Array.isArray(ele)) {
@@ -33,6 +35,12 @@ const ClientHeader = ({
   };
 
   const isOwner: any = localStorage.getItem("isOwnerData");
+
+
+
+  useEffect(() => {
+    dispatch(setContactData({ ...contactDataObj, page: 1 }))
+  }, [searchValue])
 
   return (
     <div className="bg-[#E6E6E6] w-full max-h-[50px] h-auto rounded-t-[10px] flex justify-between">
@@ -63,8 +71,8 @@ const ClientHeader = ({
 
         <Switch
           style={{
-            backgroundColor: `${!JSON.parse(isOwner) ? "#A4A5A5" : "#00b282"}`,
-            marginRight: "50px",
+            backgroundColor: `${!JSON.parse(isOwner) ? "#A4A5A5" : "#F57C00"}`,
+            marginRight: "40px",
           }}
           checked={JSON.parse(isOwner)}
           onChange={(e: any) => {

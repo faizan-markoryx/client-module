@@ -11,11 +11,11 @@
 }
 
 .ContactChangeStatusIcon {
-    @apply text-xl cursor-pointer text-[#A4A5A5] hover:text-primary
+    @apply text-xl cursor-pointer text-[#A4A5A5] hover:text-[#121820]
 }
 
 .change-status-header {
-    @apply h-14  bg-primary flex items-center pl-6 text-xl font-normal font-mulish text-white
+    @apply h-14  bg-[#121820] flex items-center pl-6 text-xl font-normal font-mulish text-white
 }
 
 .to-input-main-sec {
@@ -35,7 +35,7 @@
 }
 
 .submit-cancel-btn .sub-can-Submit {
-    @apply rounded-md bg-[#00B282]  text-white h-8 w-20 text-sm hover:!text-white border-none
+    @apply rounded-md bg-[#121820]  text-white h-8 w-20 text-sm hover:!text-white border-none
 }
 .submit-cancel-btn .sub-can-Cancel {
     @apply rounded-md bg-[#A4A5A5]  text-white h-8 w-20 text-sm hover:!text-white border-none

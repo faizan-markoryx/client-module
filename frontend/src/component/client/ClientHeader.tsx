@@ -51,7 +51,7 @@ const ClientHeader = ({
         />
         <Switch
           style={{
-            backgroundColor: `${!clientDataformat?.isAllData ? "#A4A5A5" : "#00b282"}`,
+            backgroundColor: `${!clientDataformat?.isAllData ? "#A4A5A5" : "#F57C00"}`,
             marginRight: "50px",
           }}
           onChange={handleOwnerData}

@@ -18,7 +18,7 @@
 }
 
 .main-login-container .content-login-box {
-    @apply bg-[#265F9D] h-[37rem] w-[30rem] rounded-xl flex flex-col items-center justify-center
+    @apply bg-[#121820] h-[37rem] w-[30rem] rounded-xl flex flex-col items-center justify-center
 }
 
 .content-login-box .login-header-sec {

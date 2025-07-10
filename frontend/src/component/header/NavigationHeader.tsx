@@ -113,7 +113,7 @@ const NavigationHeader = () => {
   return (
     <div>
       <div className="navigation-header-main-div">
-        <div className="img-section ">
+        <div className="img-section">
           <Link to={"/dashboard"}>
             {" "}
             <img src={headerLogo} className="w-[84px]" alt="" />
@@ -158,6 +158,7 @@ const NavigationHeader = () => {
                         >
                           <Badge
                             count={contactNotificationData?.length}
+                            color="#F57C00"
                             showZero
                           ></Badge>
                         </span>
@@ -196,7 +197,7 @@ const NavigationHeader = () => {
               // userFun();
             }}
           >
-            <Avatar name={`${userLoginData?.firstName} ${userLoginData?.lastName}`} size="30" round={true} />
+            <Avatar name={`${userLoginData?.firstName} ${userLoginData?.lastName}`} size="30" round={true} color="#F57C00" />
             <GiHamburgerMenu className="text-2xl  items-center" />
           </div>
 
@@ -226,10 +227,10 @@ const NavigationHeader = () => {
                       <p className="pt-[2rem] font-bold underline ">Manage</p>
                       <Link
                         to="/users"
-                        className="user-section  "
+                        className="user-section"
                         onClick={() => setShowMenu(false)}
                       >
-                        <FaUserFriends className="text-[25px] text-primary " />
+                        <FaUserFriends className="text-[25px] text-[#121820]" />
                         User
                       </Link>
                       <Link
@@ -237,7 +238,7 @@ const NavigationHeader = () => {
                         className="report-sec "
                         onClick={() => setShowMenu(false)}
                       >
-                        <TbReport className="text-[25px] text-primary" />
+                        <TbReport className="text-[25px] text-[#121820]" />
                         Report
                       </Link>
                     </div>

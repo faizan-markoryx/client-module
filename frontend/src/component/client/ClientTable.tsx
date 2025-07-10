@@ -56,7 +56,7 @@ const ClientTable = ({
         header: ({ table }: any) => (
           <span className=" flex items-center">
             <IndeterminateCheckbox
-              className="h-[18px] w-[18px]"
+              className="h-[18px] w-[18px] accent-[#121820]"
               {...{
                 checked: table.getIsAllRowsSelected(),
                 indeterminate: table.getIsSomeRowsSelected(),
@@ -291,7 +291,7 @@ const ClientTable = ({
                               },
                             }}
                             key={row.id}
-                            className="text-start py-2 px-[5px] whitespace-nowrap text-[14px] font-[600] flex items-center gap-x-[5px] text-[#006295]"
+                            className="text-start py-2 px-[5px] whitespace-nowrap text-[14px] font-[600] flex items-center gap-x-[5px] text-[#F57C00]"
                           >
                             <span>
                               <ClientNameDetails cell={cell.row.original} />
@@ -304,7 +304,7 @@ const ClientTable = ({
                             </span>
                             <span>
                             <FiEdit3
-                              className="cursor-pointer text-gray-400"
+                              className="cursor-pointer text-[#121820]"
                               size={16}
                               onClick={() => {
                                 setEditClientData(cell?.row?.original);

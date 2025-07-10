@@ -269,7 +269,7 @@ const AddContactPopUp = ({ cell }: any) => {
         <>
             <div>
                 {
-                    cell?.id ? <FiEdit3 onClick={allGetApiForUserClient} className="cursor-pointer text-gray-400 ml-1" size={16} />
+                    cell?.id ? <FiEdit3 onClick={allGetApiForUserClient} className="cursor-pointer text-[#121820] ml-[6px] mt-1" size={16} />
                         :
                         <button
                             className="client-table-head-add-client"

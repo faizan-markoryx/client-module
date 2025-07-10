@@ -381,7 +381,7 @@ const ClientExport = () => {
       const worksheetName = workbook.SheetNames[0];
       const worksheet = workbook.Sheets[worksheetName];
       const data: any = XLSX.utils.sheet_to_json(worksheet);
-      if(data?.length <= 3000){
+      if(data?.length <= 7000){
         setIsExportingOpen(true);
         const finalData: any = data?.map((e: any) => ({
           ...e,
@@ -407,7 +407,7 @@ const ClientExport = () => {
           message.warning("Please add some data in file.");
         }
       }else{
-        message.warning("You can add only 3000 data at a time.");
+        message.warning("You can add only 7000 data at a time.");
       }          
     }
   };
@@ -501,7 +501,7 @@ const ClientExport = () => {
         >
           <div className="w-full flex justify-center items-center ">
             <TfiExchangeVertical
-              className={`text-[#A4A5A5] hover:text-primary`}
+              className={`text-[#A4A5A5] hover:text-[#121820]`}
               size={27}
             />
           </div>
@@ -551,12 +551,12 @@ const ClientExport = () => {
             <div className="client-import-middle-details">
               <a
                 href="/template/contact_import_template.xlsx"
-                className="text-sm font-semibold"
+                className="text-sm font-semibold text-[#121820] hover:text-[#F57C00]"
               >
                 Download Excel Template
               </a>
               <span>
-                <AiOutlineDownload className="text-xl" />{" "}
+                <AiOutlineDownload className="text-xl text-[#121820]" />{" "}
               </span>
             </div>
             <div className="client-import-drag-drop-section">
@@ -667,7 +667,7 @@ const ClientExport = () => {
                 })}
               </ul>
             </div>
-            <div className="export-btn" style={{ marginTop: "9px" }}>
+            <div className="export-btn" style={{ marginTop: "20px" }}>
               <Button className="flex justify-center items-center" loading={exportLoader} onClick={() => exportToExcel()}>
                 Export
               </Button>

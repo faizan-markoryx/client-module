@@ -1,8 +1,8 @@
 .navigation-header-main-div {
-  @apply w-[100%] h-[4.3rem] bg-[#265F9D] flex justify-between items-center pr-[1rem];
+  @apply w-[100%] h-[4.3rem] bg-[#121820] flex justify-between items-center pr-[1rem];
 }
 .navigation-header-main-div .img-section {
-  @apply flex items-center gap-3 pl-[8%];
+  @apply flex items-center gap-3 pl-[6%];
 }
 .navigation-header-main-div .skulls-img {
   @apply w-[2.1rem] cursor-pointer;
@@ -11,11 +11,11 @@
   @apply w-[120] cursor-pointer;
 }
 .navigation-header-main-div .header-list-section {
-  @apply hover:rounded-lg hover:text-[#265F9D] font-semibold hover:transition hover:duration-500 hover:ease-in-out border-[#265F9D] rounded-none hover:bg-white gap-2 text-white  justify-center cursor-pointer flex items-center  w-[7.5rem] h-[3rem];
+  @apply hover:rounded-lg hover:text-[#121820] font-semibold hover:transition hover:duration-500 hover:ease-in-out border-[#121820] rounded-none hover:bg-white gap-2 text-white  justify-center cursor-pointer flex items-center  w-[7.5rem] h-[3rem];
 }
 
 .navigation-header-main-div .selected {
-  @apply rounded-lg !text-[#265F9D] font-semibold transition duration-1000 ease-in-out border-[#265F9D] bg-white gap-2 text-white  justify-center cursor-pointer flex items-center  w-[7.5rem] h-[3rem];
+  @apply rounded-lg !text-[#121820] font-semibold transition duration-1000 ease-in-out border-[#121820] bg-white gap-2 text-white  justify-center cursor-pointer flex items-center  w-[7.5rem] h-[3rem];
 }
 .navigation-header-main-div .log-out-header-but {
   @apply cursor-pointer  justify-center flex items-center gap-1;
@@ -38,7 +38,7 @@
   @apply flex items-center pl-[2rem] gap-8;
 }
 .navigation-header-main-div .profile-sec {
-  @apply w-[4rem]  h-[4rem] rounded-full bg-[#265F9D] flex justify-center;
+  @apply w-[4rem]  h-[4rem] rounded-full bg-[#121820] flex justify-center;
 }
 .navigation-header-main-div .user-section {
   @apply flex  cursor-pointer pl-1  items-center text-black gap-3 justify-start w-[5rem] h-[2.5rem]  rounded-t-md;
@@ -53,7 +53,7 @@
   @apply font-semibold flex items-center justify-center;
 }
 .navigation-header-main-div .avtar-and-menu-sec {
-  @apply w-[6rem] h-[3rem] cursor-pointer hover:rounded-lg flex text-white hover:text-primary items-center justify-center gap-2 hover:bg-[white];
+  @apply w-[6rem] h-[3rem] cursor-pointer hover:rounded-lg flex text-white hover:text-[#121820] items-center justify-center gap-2 hover:bg-[white];
 }
 
 

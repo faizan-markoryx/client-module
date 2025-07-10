@@ -6,7 +6,7 @@ type Props = {
 
 function IndeterminateCheckbox({
   indeterminate,
-  className = 'w-[16px] h-[16px]',
+  className = 'w-[16px] h-[16px] accent-[#121820]',
   ...rest
 }: Props) {
   const ref = React.useRef<HTMLInputElement>(null!)

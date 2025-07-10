@@ -194,7 +194,7 @@ const ContactAddNote = ({ row, ele }: any) => {
         }
       >
         <form onSubmit={handleSubmitNote}>
-          <div className="flex justify-between bg-primary h-14 border-b items-center pl-5 pr-4 rounded-t-[10px]">
+          <div className="flex justify-between bg-[#121820] h-14 border-b items-center pl-5 pr-4 rounded-t-[10px]">
             <h1 className="text-xl text-white">
               Add Note For{" "}
               <span>
